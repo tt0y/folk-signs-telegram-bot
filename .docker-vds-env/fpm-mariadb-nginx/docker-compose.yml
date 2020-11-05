@@ -17,7 +17,7 @@ services:
 
   mariadb:
       environment:
-        - MYSQL_ROOT_PASSWORD=7bn8vrt
+        - MYSQL_ROOT_PASSWORD=123456
         - MYSQL_ALLOW_EMPTY_PASSWORD=true
       volumes:
         - '/var/lib/mariadb/data/:/var/lib/mariadb/data/'
