@@ -1491,6 +1491,13 @@ class SignsTableSeeder extends Seeder
         ]);
 
         Sign::create([
+            'day' => '10',
+            'month' => '10',
+            'name' => 'Зосим и Савва — покровители пчёл — печеньем на меду народ потчуют',
+            'description' => '',
+        ]);
+
+        Sign::create([
             'day' => '11',
             'month' => '10',
             'name' => 'Савватей-Пчельник',
