@@ -33,14 +33,16 @@ class SignController extends Controller
      * Display the specified resource.
      *
      * @param \App\Models\Sign $sign
-     * @return Sign|Sign[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model
+     * @return \Illuminate\Http\JsonResponse
      */
-    public function show(Sign $sign, $day, $month)
+    public function show($day, $month)
     {
-        return Sign::where([
+        $sign = Sign::where([
             ['day', '=', $day],
             ['month', '=', $month],
-        ])->get();
+        ])->get()->toArray();
+
+        return response()->json($sign);
     }
 
     /**
@@ -55,6 +57,7 @@ class SignController extends Controller
         $sign = Sign::findOrFail($id);
         $sign->fill($request->except(['sign_id']));
         $sign->save();
+
         return response()->json($sign);
     }
 
