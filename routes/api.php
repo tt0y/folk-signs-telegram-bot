@@ -19,6 +19,6 @@ use App\Http\Controllers\SignController;
 //    return $request->user();
 //});
 
-Route::resource('signs', 'App\Http\Controllers\SignController', ['except' => ['create', 'edit']]);
+Route::resource('signs', 'SignController', ['except' => ['create', 'edit']]);
 
-Route::get('signs/{day}/{month}', 'App\Http\Controllers\SignController@show');
+Route::get('signs/{day}/{month}', 'SignController@show');
