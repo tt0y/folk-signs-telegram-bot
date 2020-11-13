@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::middleware('auth')->prefix('admin')->namespace('Backend')->name('admin.')->group(function (){
+    Route::get('/', 'DashboardController@index')->name('index');
+
+    Route::get('/settings', 'SettingsController@index')->name('settings.index');
+    Route::post('/settings', 'SettingsController@store')->name('settings.store');
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
