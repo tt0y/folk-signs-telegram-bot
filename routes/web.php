@@ -21,8 +21,8 @@ Route::get('/', function () {
 Route::middleware('auth')->prefix('admin')->namespace('Backend')->name('admin.')->group(function (){
     Route::get('/', 'DashboardController@index')->name('index');
 
-    Route::get('/settings', 'SettingsController@index')->name('settings.index');
-    Route::post('/settings', 'SettingsController@store')->name('settings.store');
+    Route::get('/settings', 'SettingController@index')->name('settings.index');
+    Route::post('/settings', 'SettingController@store')->name('settings.store');
 });
 
 Auth::routes();

@@ -17,7 +17,7 @@
                         <li><a href="#"></a> {{ __('Получить информацию') }} </li>
                     </ul>
                 </div>
-                <input type="url" class="form-controll" id="url_callback_bot" name="url_callback_bot" value=" {{ $url_callback_bot or '' }} ">
+                <input type="url" class="form-controll" id="url_callback_bot" name="url_callback_bot" value=" {{ $url_callback_bot ?? '' }} ">
             </div>
         </div>
 
