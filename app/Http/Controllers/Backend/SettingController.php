@@ -33,4 +33,29 @@ class SettingController extends Controller
 
         return redirect()->route('admin.settings.index');
     }
+
+    public function sendTelegramData($route ='', $params = [], $method = 'POST')
+    {
+        $client = new \GuzzleHttp\Client([
+            'base_uri' => 'https://api.telegram.org/bot' . \Telegram\getAccessToken() . '/'
+        ]);
+        $result = $client->request($method, $route, $params);
+        return (string) $result->getBody();
+    }
+
+    public function setWebhook(Request $request)
+    {
+        $result = $this->sendTelegramData('setwebhook', [
+            'query' => ['url' => $request->url . '/' . \Telegram::getAccessToken()]
+        ]);
+
+        return redirect()->route('admin.settings.index')->with('status', $result);
+    }
+
+    public function getWebhookInfo()
+    {
+        $result = $this->sendTelegramData('getWebhookInfo');
+
+        return redirect()->route('admin.settings.index')->with('status', $result);
+    }
 }
