@@ -11,13 +11,12 @@
                             aria-haspopup="true" aria-expanded="false"> {{ __('Действие') }} <span class="caret"></span>
                         </button>
                     <ul class="dropdown-menu">
-                        <li><a href="#" onclick="document.getElementById('url_callback_bot').
-                        value = '{{ url('')  }}"> {{ __('Вставить URL') }} </a> </li>
-                        <li><a href="#"></a> {{ __('Получить URL') }} </li>
-                        <li><a href="#"></a> {{ __('Получить информацию') }} </li>
+                        <li><a href="#" onclick="document.getElementById('url_callback_bot').value = '{{ url('')  }}">{{ __('Вставить URL') }}</a></li>
+                        <li><a href="#"></a>{{ __('Получить URL') }}</li>
+                        <li><a href="#"></a>{{ __('Получить информацию') }}</li>
                     </ul>
                 </div>
-                <input type="url" class="form-controll" id="url_callback_bot" name="url_callback_bot" value=" {{ $url_callback_bot ?? '' }} ">
+                <input type="url" class="form-control" id="url_callback_bot" name="url_callback_bot" value=" {{ $url_callback_bot ?? '' }} ">
             </div>
         </div>
 

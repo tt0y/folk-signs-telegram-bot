@@ -31,6 +31,6 @@ class SettingController extends Controller
             $setting->save();
         }
 
-        return redirect()->route('admin.setting.index');
+        return redirect()->route('admin.settings.index');
     }
 }

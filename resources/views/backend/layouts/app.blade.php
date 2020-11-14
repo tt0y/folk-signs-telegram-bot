@@ -32,9 +32,9 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-                        <li><a href="{{ route('admin.index') }}">{{ __('Панель состояния') }}</a></li>
-                        <li><a href="{{ route('admin.settings.index') }}">{{ __('Настройки') }}</a></li>
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a class="navbar-brand" href="{{ route('admin.index') }}">{{ __('Панель состояния') }}</a></li>
+                        <li class="nav-item"><a class="navbar-brand" href="{{ route('admin.settings.index') }}">{{ __('Настройки') }}</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
