@@ -17,17 +17,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::middleware('auth')->prefix('admin')->namespace('Backend')->name('admin.')->group(function (){
     Route::get('/', 'DashboardController@index')->name('index');
 
     Route::get('/settings', 'SettingController@index')->name('settings.index');
     Route::post('/settings', 'SettingController@store')->name('settings.store');
-
-    Route::get('/settings/webhook', 'SettingController@getWebhookInfo')->name('settings.getwebhookinfo');
-    Route::post('/settings/webhook', 'SettingController@setWebhook')->name('settings.setwebhook');
+    Route::post('/settings/getwebhookinfo', 'SettingController@getWebhookInfo')->name('settings.getwebhookinfo');
+    Route::post('/settings/setwebhook', 'SettingController@setWebhook')->name('settings.setwebhook');
 });
 
 Auth::routes();
