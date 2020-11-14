@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Backend\DashboardController;
 use Illuminate\Support\Facades\Route;
+use Telegram\Bot\Laravel\Facades\Telegram;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,10 @@ Route::middleware('auth')->prefix('admin')->namespace('Backend')->name('admin.')
     Route::post('/settings', 'SettingController@store')->name('settings.store');
     Route::post('/settings/getwebhookinfo', 'SettingController@getWebhookInfo')->name('settings.getwebhookinfo');
     Route::post('/settings/setwebhook', 'SettingController@setWebhook')->name('settings.setwebhook');
+});
+
+Route::post(\Telegram::getAccessToken(), function (){
+   Telegram::commandsHandler(true);
 });
 
 Auth::routes();

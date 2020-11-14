@@ -21,8 +21,8 @@
                             <li><a href="#"
                                    onclick="document.getElementById('url_callback_bot').value = '{{ url('')  }}">{{ __('Вставить URL') }}</a>
                             </li>
-                            <li><a href="#" onclick="event.preventDefault(); document.getElementById('setwebhook').submit();">{{ __('Получить URL') }}</a></li>
-                            <li><a href="#" onclick="event.preventDefault(); document.getElementById('getwebhookinfo').submit();">{{ __('Получить информацию') }}</a></li>
+                            <li><a href="#" onclick="event.preventDefault(); document.getElementById('setwebhook').submit();">{{ __('Установить webhook') }}</a></li>
+                            <li><a href="#" onclick="event.preventDefault(); document.getElementById('getwebhookinfo').submit();">{{ __('Получить инф. по webhook') }}</a></li>
                         </ul>
                     </div>
                     <input type="url" class="form-control" id="url_callback_bot" name="url_callback_bot"
