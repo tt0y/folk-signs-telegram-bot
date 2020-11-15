@@ -18,7 +18,7 @@ defaultEntryPoints = ["http", "https"]
   entrypoint="dashboard"
 
 [acme]
-  email = "admin@thesigns.ru"
+  email = "ajusmith@gmail.com"
   storage = "acme.json"
   entryPoint = "https"
   onHostRule = true
