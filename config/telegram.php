@@ -33,14 +33,12 @@ return [
     */
     'bots'                         => [
         'mybot' => [
-            'username'            => 'Primetki',
+            'username'            => 'TelegramBot',
             'token'               => env('TELEGRAM_BOT_TOKEN', 'YOUR-BOT-TOKEN'),
             'certificate_path'    => env('TELEGRAM_CERTIFICATE_PATH', 'YOUR-CERTIFICATE-PATH'),
             'webhook_url'         => env('TELEGRAM_WEBHOOK_URL', 'YOUR-BOT-WEBHOOK-URL'),
             'commands'            => [
                 //Acme\Project\Commands\MyTelegramBot\BotCommand::class
-                Telegram\Bot\Commands\HelpCommand::class,
-                App\Telegram\TestCommand::class,
             ],
         ],
 
@@ -118,8 +116,9 @@ return [
     |
     */
     'commands'                     => [
-        //Telegram\Bot\Commands\HelpCommand::class,
-        //App\Telegram\TestCommand::class
+        Telegram\Bot\Commands\HelpCommand::class,
+        \App\Telegram\SignCommand::class,
+        \App\Telegram\StartCommand::class,
     ],
 
     /*
@@ -203,7 +202,5 @@ return [
         // 'start' => Acme\Project\Commands\StartCommand::class,
         // 'stop' => Acme\Project\Commands\StopCommand::class,
         // 'status' => Acme\Project\Commands\StatusCommand::class,
-
-        //'test' => App\Telegram\TestCommand::class
     ],
 ];

@@ -32,7 +32,8 @@ class SignController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param \App\Models\Sign $sign
+     * @param $day
+     * @param $month
      * @return \Illuminate\Http\JsonResponse
      */
     public function show($day, $month)
