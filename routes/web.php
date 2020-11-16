@@ -30,7 +30,7 @@ Route::middleware('auth')->prefix('admin')->namespace('Backend')->name('admin.')
     Route::post('/settings/setwebhook', 'SettingController@setWebhook')->name('settings.setwebhook');
 });
 
-Route::post(\Telegram::getAccessToken(), function (){
+Route::post(Telegram::getAccessToken(), function (){
    Telegram::commandsHandler(true);
 });
 
