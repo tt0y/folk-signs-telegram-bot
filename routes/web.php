@@ -31,7 +31,8 @@ Route::middleware('auth')->prefix('admin')->namespace('Backend')->name('admin.')
 });
 
 Route::post(Telegram::getAccessToken(), function (){
-    app('App\Http\Controllers\Backend\TelegramController')->webhook();
+   Telegram::commandsHandler(true);
+   //app('App\Http\Controllers\Backend\TelegramController')->webhook();
 });
 
 Auth::routes();

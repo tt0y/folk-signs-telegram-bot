@@ -3,8 +3,11 @@
 namespace App\Telegram;
 
 use App\Models\Sign;
+use Illuminate\Support\Facades\Log;
 use Telegram\Bot\Actions;
 use Telegram\Bot\Commands\Command;
+use Telegram\Bot\Keyboard\Keyboard;
+use Telegram\Bot\Laravel\Facades\Telegram;
 
 /**
  * Class HelpCommand.
@@ -31,28 +34,31 @@ class StartCommand extends Command
      */
     public function handle()
     {
-        $text = 'Привет! Хочешь приметку на сегодня? Жми --> /sign';
+        $telegramChatId = Telegram::getWebhookUpdates()['message']['from']['id'];
+        $userName = Telegram::getWebhookUpdates()['message']['from']['username'];
 
-//        $keyboard = [
-//            ['7', '8', '9'],
-//            ['4', '5', '6'],
-//            ['1', '2', '3'],
-//            ['0']
-//        ];
-//
-//        $reply_markup = \Telegram::replyKeyboardMarkup([
-//            'keyboard' => $keyboard,
-//            'resize_keyboard' => true,
-//            'one_time_keyboard' => true
-//        ]);
-//
-//        $response = \Telegram::sendMessage([
-//            'chat_id' => 'CHAT_ID',
-//            'text' => 'Hello World',
-//            'reply_markup' => $reply_markup
-//        ]);
-//
-//        $messageId = $response->getMessageId();
+        $text = __("Привет $userName! Хочешь приметку на сегодня?");
+
+        $keyboard = [
+            [__('Расскажи, что было вчера')],
+            [__('А сегодня?')],
+            [__('Ну а завтра?')],
+        ];
+
+        $replyMarkup = Keyboard::make([
+            'keyboard' => $keyboard,
+            'resize_keyboard' => true,
+            'one_time_keyboard' => true
+        ]);
+//        //Log::error();
+
+        $response = Telegram::sendMessage([
+            'chat_id' => $telegramChatId,
+            'text' => 'Hello World',
+            'reply_markup' => $replyMarkup
+        ]);
+
+        $messageId = $response->getMessageId();
 
         $this->replyWithMessage(compact('text'));
     }

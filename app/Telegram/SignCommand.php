@@ -42,7 +42,7 @@ class SignCommand extends Command
         if (isset($sign[0]))
             $text = $sign[0]['name'] . PHP_EOL . $sign[0]['description'];
         else
-            $text = __('Долгие наблюдения за природй не дали резултатов -- примет на сегодня нет');
+            $text = __('Долгие наблюдения за природй не дали резултатов.'. PHP_EOL . 'Примет на сегодня нет');
 
         $this->replyWithMessage(compact('text'));
     }
