@@ -36,6 +36,7 @@ class StartCommand extends Command
     {
         $telegramChatId = Telegram::getWebhookUpdates()['message']['from']['id'];
         $userName = Telegram::getWebhookUpdates()['message']['from']['username'];
+        (isset($userName))?:$userName = '';
 
         $text = __("Привет $userName! Хочешь приметку на сегодня? Жми --> /sign");
 
@@ -50,16 +51,13 @@ class StartCommand extends Command
             'resize_keyboard' => true,
             'one_time_keyboard' => true
         ]);
-//        //Log::error();
 
         $response = Telegram::sendMessage([
             'chat_id' => $telegramChatId,
-            'text' => 'Hello World',
+            'text' => $text,
             'reply_markup' => $replyMarkup
         ]);
 
         $messageId = $response->getMessageId();
-
-        $this->replyWithMessage(compact('text'));
     }
 }
