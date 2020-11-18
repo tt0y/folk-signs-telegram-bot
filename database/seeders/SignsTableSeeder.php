@@ -1708,6 +1708,13 @@ class SignsTableSeeder extends Seeder
         ]);
 
         Sign::create([
+            'day' => '18',
+            'month' => '11',
+            'name' => 'Галактион. День Млечности',
+            'description' => 'Девицы молились о женихах и умоляли Всевышнего послать им настоящего мужа',
+        ]);
+
+        Sign::create([
             'day' => '19',
             'month' => '11',
             'name' => 'Павел и Варлаам',
