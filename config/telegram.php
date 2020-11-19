@@ -118,9 +118,6 @@ return [
     'commands'                     => [
         Telegram\Bot\Commands\HelpCommand::class,
         \App\Telegram\todaySuperstitionCommand::class,
-        \App\Telegram\tomorrowSuperstitionCommand::class,
-        \App\Telegram\yesterdaySuperstitionCommand::class,
-        \App\Telegram\todaySuperstitionCommand::class,
         \App\Telegram\StartCommand::class,
     ],
 
