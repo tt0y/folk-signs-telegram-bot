@@ -42,7 +42,7 @@ class tomorrowSuperstitionCommand extends Command
         if (isset($sign[0]))
             $text = $sign[0]['name'] . PHP_EOL . $sign[0]['description'];
         else
-            $text = __('Долгие наблюдения за природй не дали резултатов.'. PHP_EOL . 'Примет на сегодня нет');
+            $text = __('Долгие наблюдения за природой не дали резултатов.'. PHP_EOL . 'Примет на сегодня нет');
 
         $this->replyWithMessage(compact('text'));
     }
