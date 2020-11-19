@@ -39,7 +39,7 @@ class StartCommand extends Command
         $telegramChatId = Telegram::getWebhookUpdates()['message']['chat']['id'];
         $userName = Telegram::getWebhookUpdates()['message']['from']['username'] ?? $userName = '';
 
-        Log::info(Telegram::getWebhookUpdates());
+        //Log::info(Telegram::getWebhookUpdates());
 
         TelegramUser::create([
             'user_id' => $telegramUserId,

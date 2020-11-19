@@ -10,4 +10,8 @@ class TelegramUser extends Model
     use HasFactory;
 
     public $timestamps = false;
+
+    protected $table = 'telegram_users';
+
+    protected $fillable = ['user_id', 'chat_id', 'data'];
 }
