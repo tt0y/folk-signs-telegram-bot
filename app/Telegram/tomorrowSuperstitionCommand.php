@@ -9,7 +9,7 @@ use Telegram\Bot\Commands\Command;
 /**
  * Class HelpCommand.
  */
-class todaySuperstitionCommand extends Command
+class tomorrowSuperstitionCommand extends Command
 {
     /**
      * @var string Command Name
