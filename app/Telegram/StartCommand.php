@@ -38,15 +38,14 @@ class StartCommand extends Command
         $telegramChatId = Telegram::getWebhookUpdates()['message']['chat']['id'];
         $userName = Telegram::getWebhookUpdates()['message']['from']['username'] ?? $userName = '';
 
-        //Log::info(Telegram::getWebhookUpdates());
-
-        $text = __("Привет $userName! Хочешь приметку на сегодня? Жми --> /sign");
+        $text = __("Привет $userName! Хочешь приметку на сегодня?");
 
         $keyboard = [
-//            [__('Расскажи, что было вчера')],
-//            [__('А сегодня?')],
-//            [__('Ну а завтра?')],
-//            [__('Узнать примету на конкретный день')],
+            [__('/yesterday')],
+            [__('/today')],
+            [__('/tomorrow')],
+            [__('/help')],
+            //[__('Узнать примету на конкретный день')],
         ];
 
         $replyMarkup = Keyboard::make([

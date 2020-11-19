@@ -15,10 +15,6 @@ use App\Http\Controllers\SignController;
 |
 */
 
-//Route::middleware('auth:api')->get('/user', function (Request $request) {
-//    return $request->user();
-//});
+Route::resource('v1/superstition', 'SignController', ['except' => ['create', 'edit']]);
 
-Route::resource('signs', 'SignController', ['except' => ['create', 'edit']]);
-
-Route::get('signs/{day}/{month}', 'SignController@show');
+Route::get('v1/superstition/{day}/{month}', 'SignController@show');
