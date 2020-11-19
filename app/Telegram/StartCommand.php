@@ -3,6 +3,7 @@
 namespace App\Telegram;
 
 use App\Models\Sign;
+use App\Models\TelegramUser;
 use Illuminate\Support\Facades\Log;
 use Telegram\Bot\Actions;
 use Telegram\Bot\Commands\Command;
@@ -34,8 +35,17 @@ class StartCommand extends Command
      */
     public function handle()
     {
-        $telegramChatId = Telegram::getWebhookUpdates()['message']['from']['id'];
+        $telegramUserId = Telegram::getWebhookUpdates()['message']['from']['id'];
+        $telegramChatId = Telegram::getWebhookUpdates()['message']['chat']['id'];
         $userName = Telegram::getWebhookUpdates()['message']['from']['username'] ?? $userName = '';
+
+        Log::info(Telegram::getWebhookUpdates());
+
+        TelegramUser::create([
+            'user_id' => $telegramUserId,
+            'chat_id' => $telegramChatId,
+            'data' => Telegram::getWebhookUpdates(),
+        ]);
 
         $text = __("Привет $userName! Хочешь приметку на сегодня? Жми --> /sign");
 
