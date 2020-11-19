@@ -117,7 +117,7 @@ return [
     */
     'commands'                     => [
         Telegram\Bot\Commands\HelpCommand::class,
-        \App\Telegram\SignCommand::class,
+        \App\Telegram\todaySuperstitionCommand::class,
         \App\Telegram\StartCommand::class,
     ],
 

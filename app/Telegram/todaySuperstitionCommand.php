@@ -9,17 +9,17 @@ use Telegram\Bot\Commands\Command;
 /**
  * Class HelpCommand.
  */
-class SignCommand extends Command
+class todaySuperstitionCommand extends Command
 {
     /**
      * @var string Command Name
      */
-    protected $name = 'sign';
+    protected $name = 'today';
 
     /**
      * @var array Command Aliases
      */
-    protected $aliases = ['signcommands'];
+    protected $aliases = ['today_command'];
 
     /**
      * @var string Command Description
