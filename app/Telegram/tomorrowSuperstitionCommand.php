@@ -24,7 +24,7 @@ class tomorrowSuperstitionCommand extends Command
     /**
      * @var string Command Description
      */
-    protected $description = 'Примета на сегодня';
+    protected $description = 'Примета на завтра';
 
     /**
      * {@inheritdoc}
