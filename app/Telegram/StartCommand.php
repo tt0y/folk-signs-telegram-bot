@@ -35,17 +35,10 @@ class StartCommand extends Command
      */
     public function handle()
     {
-        $telegramUserId = Telegram::getWebhookUpdates()['message']['from']['id'];
         $telegramChatId = Telegram::getWebhookUpdates()['message']['chat']['id'];
         $userName = Telegram::getWebhookUpdates()['message']['from']['username'] ?? $userName = '';
 
         //Log::info(Telegram::getWebhookUpdates());
-
-        TelegramUser::create([
-            'user_id' => $telegramUserId,
-            'chat_id' => $telegramChatId,
-            'data' => Telegram::getWebhookUpdates(),
-        ]);
 
         $text = __("Привет $userName! Хочешь приметку на сегодня? Жми --> /sign");
 
