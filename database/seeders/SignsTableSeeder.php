@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Sign;
+use App\Models\Superstition;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -15,7 +15,7 @@ class SignsTableSeeder extends Seeder
      */
     public function run()
     {
-        Sign::create([
+        Superstition::create([
             'day' => '0',
             'month' => '3',
             'name' => 'Март',
@@ -42,7 +42,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-                Sign::create([
+                Superstition::create([
             'day' => '4',
             'month' => '3',
             'name' => 'Красная горка',
@@ -52,21 +52,21 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '6',
             'month' => '3',
             'name' => 'Тимофеи-весновеи.',
             'description' => '"Пришёл Тимофей, так тепло у дверей. Тепло веет – стариков греет" По старому обычаю выходили на завалинку греться на солнышке. Говорили: "Дожить до Весновия, а там весна не страшна". Начинает сок бродить в клёне и берёзе',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '6',
             'month' => '3',
             'name' => 'Афанасий',
             'description' => '"Пока крепок наст, удержать сани горазд". Массовый прилёт грачей.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '7',
             'month' => '3',
             'name' => 'Александр, Поликарп.',
@@ -78,7 +78,7 @@ class SignsTableSeeder extends Seeder
 в древности славяне с этих дней и две недели праздновали начало Нового года. Провожают Зиму, встречают Весну. Зажигают новый огонь в очаге.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '10',
             'month' => '3',
             'name' => 'Вешняя дрёма.',
@@ -90,7 +90,7 @@ class SignsTableSeeder extends Seeder
 Справляются очередные тужилки по масленице, сопровождаемые так называемым полосканием зубов, кулачными боями "для вытряхивания блинов", мытьём в бане. Проводятся сборные ярмарки и торги',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '12',
             'month' => '3',
             'name' => 'Прокоп-Перезимник дорогу рушит.',
@@ -99,7 +99,7 @@ class SignsTableSeeder extends Seeder
 * Верба сплошная – к хорошему урожаю.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '13',
             'month' => '3',
             'name' => 'Василий-Капельник',
@@ -109,7 +109,7 @@ class SignsTableSeeder extends Seeder
 * Если солнце в кругах – к урожаю.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '14',
             'month' => '3',
             'name' => 'Евдокия, весновка, свистунья',
@@ -123,7 +123,7 @@ class SignsTableSeeder extends Seeder
 * Пришли Евдокеи – мужику затеи: соху точить и борону чинить.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '15',
             'month' => '3',
             'name' => 'Федот-Ветронос.',
@@ -134,14 +134,14 @@ class SignsTableSeeder extends Seeder
 Празднование Державной Чудотворной иконе Божией Матери. Державная икона Божией Матери являет собой подлинное чудо, доказывающее, что Богородица благоволит России. Этот чудотворный образ был явлен в день отречения от престола последнего русского императора из дома Романовых.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '17',
             'month' => '3',
             'name' => 'Герасим-Грачевник.',
             'description' => 'В этот день ожидали прилёта грачей – вестников весны. Если грачи прямо на гнездо летят – дружная <быстрая> весна. Грачи сели в гнёзда – через 3 недели можно выходить на посев.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '18',
             'month' => '3',
             'name' => 'Конон-огородник.',
@@ -149,7 +149,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '19',
             'month' => '3',
             'name' => '19 марта',
@@ -157,7 +157,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '20',
             'month' => '3',
             'name' => 'Василий-капельник.',
@@ -165,7 +165,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '21',
             'month' => '3',
             'name' => 'Вешнее равноденствие.',
@@ -175,7 +175,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '22',
             'month' => '3',
             'name' => ' Сороки – встреча весны.',
@@ -199,7 +199,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '23',
             'month' => '3',
             'name' => 'день становится длиннее ночи, пробуждается природа.',
@@ -213,7 +213,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '25',
             'month' => '3',
             'name' => 'Григорий. Феофанов день.',
@@ -221,7 +221,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '26',
             'month' => '3',
             'name' => 'Никифор',
@@ -229,7 +229,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '27',
             'month' => '3',
             'name' => 'Федор-скотник.',
@@ -237,7 +237,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '28',
             'month' => '3',
             'name' => 'Александр',
@@ -245,7 +245,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '29',
             'month' => '3',
             'name' => ' сани покинь, телегу подвинь.',
@@ -253,7 +253,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '30',
             'month' => '3',
             'name' => 'Алексей тёплый',
@@ -264,7 +264,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '31',
             'month' => '3',
             'name' => 'Кирилл',
@@ -272,7 +272,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '1',
             'month' => '4',
             'name' => 'Дарья',
@@ -285,7 +285,7 @@ class SignsTableSeeder extends Seeder
 * Если вешняя вода идёт с шумом – жди хорошей травы.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '2',
             'month' => '4',
             'name' => 'Колодезница. Клавдия. ',
@@ -293,7 +293,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '3',
             'month' => '4',
             'name' => 'Кирилл – дери полоз.',
@@ -301,7 +301,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '4',
             'month' => '4',
             'name' => 'Василий Тёплый-солнечник',
@@ -311,7 +311,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '6',
             'month' => '4',
             'name' => 'Захарии',
@@ -319,7 +319,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '7',
             'month' => '4',
             'name' => '',
@@ -327,7 +327,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '7',
             'month' => '4',
             'name' => '',
@@ -335,7 +335,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '7',
             'month' => '4',
             'name' => 'Благовещение Пресвятой Богородицы.',
@@ -361,7 +361,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '8',
             'month' => '4',
             'name' => 'Гавриил Василий.',
@@ -369,7 +369,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '9',
             'month' => '4',
             'name' => 'Матрёны-настовицы',
@@ -380,7 +380,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '11',
             'month' => '4',
             'name' => 'Марк',
@@ -393,7 +393,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '14',
             'month' => '4',
             'name' => 'Марья-зажги снега, заиграй овражки.',
@@ -406,7 +406,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '15',
             'month' => '4',
             'name' => 'Тит-ледолом',
@@ -414,7 +414,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '18',
             'month' => '4',
             'name' => 'Федул-ветренник – тёплый ветер подул',
@@ -424,7 +424,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '19',
             'month' => '4',
             'name' => 'Евтихий и Иеремия.',
@@ -432,7 +432,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '7',
             'month' => '4',
             'name' => '',
@@ -440,7 +440,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '20',
             'month' => '4',
             'name' => 'Акулина',
@@ -448,7 +448,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '21',
             'month' => '4',
             'name' => 'Родион-ледолом. Вскрываются реки.',
@@ -467,7 +467,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '23',
             'month' => '4',
             'name' => 'Терентий',
@@ -475,7 +475,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '24',
             'month' => '4',
             'name' => 'Антип воду подпустил.',
@@ -483,7 +483,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '25',
             'month' => '4',
             'name' => 'Василий Парийский землю парит.',
@@ -492,7 +492,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '28',
             'month' => '4',
             'name' => 'Пуд',
@@ -501,7 +501,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '29',
             'month' => '4',
             'name' => 'Ирина – разрой берега, заиграй овражки. Сеют капустную рассаду в грунт.',
@@ -509,7 +509,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '30',
             'month' => '4',
             'name' => 'Зосима Пчельник.',
@@ -517,7 +517,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '1',
             'month' => '5',
             'name' => 'Кузьма. Козьма-огородник.',
@@ -529,7 +529,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '2',
             'month' => '5',
             'name' => 'Весне новина. Иван-Ветхопещерник.',
@@ -537,7 +537,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '3',
             'month' => '5',
             'name' => 'чтили родовые угорья.',
@@ -548,7 +548,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '4',
             'month' => '5',
             'name' => 'Лука. Сажали лук',
@@ -556,7 +556,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '6',
             'month' => '5',
             'name' => 'Егорьев день (Егор  Юрий). Егорий вешний <великий>. Георгий Победоносец.',
@@ -593,7 +593,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '7',
             'month' => '5',
             'name' => 'Евсей',
@@ -601,7 +601,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '8',
             'month' => '5',
             'name' => 'Марк',
@@ -609,7 +609,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '10',
             'month' => '5',
             'name' => 'Семён-ранопашец',
@@ -617,7 +617,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '11',
             'month' => '5',
             'name' => 'Евсей <Ясон> и Максим.',
@@ -631,7 +631,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '13',
             'month' => '5',
             'name' => 'Яков',
@@ -639,7 +639,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '14',
             'month' => '5',
             'name' => 'Еремей запрягальник или запашник.',
@@ -649,7 +649,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '15',
             'month' => '5',
             'name' => 'Борис-день. Борис и Глеб. Соловьиный день.',
@@ -657,7 +657,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '16',
             'month' => '5',
             'name' => 'Марфа – зелёные щи.',
@@ -665,7 +665,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '18',
             'month' => '5',
             'name' => 'Арина – рассадница. ',
@@ -673,7 +673,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '19',
             'month' => '5',
             'name' => 'Росенник. Иов-огуречник.',
@@ -682,7 +682,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '20',
             'month' => '5',
             'name' => 'Купальница',
@@ -692,7 +692,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '22',
             'month' => '5',
             'name' => 'Вешний Никола. Николин день. ',
@@ -702,7 +702,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '23',
             'month' => '5',
             'name' => 'Земля-именинница. ',
@@ -712,7 +712,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '24',
             'month' => '5',
             'name' => 'Мокий <Мокей> мокрый. ',
@@ -722,7 +722,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '25',
             'month' => '5',
             'name' => 'Рябиновка (Епифан).',
@@ -733,7 +733,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '26',
             'month' => '5',
             'name' => 'Лукерья – комарница. ',
@@ -743,7 +743,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '27',
             'month' => '5',
             'name' => 'Сидор с ветрами. Сидор-огуречник. ',
@@ -753,7 +753,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '28',
             'month' => '5',
             'name' => 'Пахом-бокогрей.',
@@ -762,7 +762,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '30',
             'month' => '5',
             'name' => 'Ондрон с дождём.',
@@ -770,91 +770,91 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '31',
             'month' => '5',
             'name' => 'Федот дубовый лист развернёт.',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '1',
             'month' => '6',
             'name' => ' Иван долгий.',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '2',
             'month' => '6',
             'name' => 'Фалалей–огуречник',
             'description' => '* К урожаю огурцов – множество шишек на елях.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '3',
             'month' => '6',
             'name' => 'Олёна-ранние росы, Леносейка.',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '7',
             'month' => '6',
             'name' => 'Иванов день.',
             'description' => '* Сильные росы – хороший урожай.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '10',
             'month' => '6',
             'name' => 'Никита-гусятник.',
             'description' => '* Если день тихий – к хорошему урожаю',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '11',
             'month' => '6',
             'name' => ' Федосья-колосяница.',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '12',
             'month' => '6',
             'name' => 'День России',
             'description' => 'Встреча лета. В эту неделю собирали лечебные травы, а в конце недели устраивался праздник – берёзка. Надеваемые при этом на голову венки считались символом бессмертия.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '14',
             'month' => '6',
             'name' => 'Устин',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '17',
             'month' => '6',
             'name' => 'Митрофан',
             'description' => '* В канун Митрофана не ложись спать рано. "Хоть по стенке ходи, а спать погоди"',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '18',
             'month' => '6',
             'name' => 'Дорофей',
             'description' => '* Если погода тёплая и ясная – зерно будет крупное.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '21',
             'month' => '6',
             'name' => 'Федор летний',
             'description' => 'Федор Стратилат, грозами и грачами богат.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '22',
             'month' => '6',
             'name' => 'Кирилл – конец весны, начало лета.',
@@ -862,7 +862,7 @@ class SignsTableSeeder extends Seeder
 Древнеславянский праздник Иван Купала в дни летнего солнцестояния – почитание огня.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '25',
             'month' => '6',
             'name' => 'Петров день, солнцеворот, капустник, рыболов.',
@@ -871,21 +871,21 @@ class SignsTableSeeder extends Seeder
 * Коли в Петров день красное лето – зелёный покос, а коли дождь – покос мокрый.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '26',
             'month' => '6',
             'name' => 'Акулины – базы.',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '27',
             'month' => '6',
             'name' => 'Елисей',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '29',
             'month' => '6',
             'name' => 'Тихон',
@@ -897,7 +897,7 @@ class SignsTableSeeder extends Seeder
 
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '1',
             'month' => '7',
             'name' => 'Второй месяц лета. Червень. Сенозарник. Сеностав. Страдник. Грозник. Грозовик. Серпень. Сенокосник. Липец. Жарник. Сладкоежка. Ягодник. Румянец года. Вершина лета.',
@@ -914,21 +914,21 @@ class SignsTableSeeder extends Seeder
 * Лошадь летом фыркает – к дождю.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '3',
             'month' => '7',
             'name' => 'Мефодий-перепелятник.',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '6',
             'month' => '7',
             'name' => 'Аграфена Купальница.',
             'description' => 'Сбор лечебных трав.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '7',
             'month' => '7',
             'name' => 'Иван Купала или Иванов день. Большой покос.',
@@ -937,28 +937,28 @@ class SignsTableSeeder extends Seeder
 * На Иванову ночь звёздно – будет много грибов.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '8',
             'month' => '7',
             'name' => 'Пётр и Феврония Муромские. День семьи, любви и верности',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '9',
             'month' => '7',
             'name' => 'Тихвинская',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '10',
             'month' => '7',
             'name' => 'Самсон сеногной. ',
             'description' => 'На Самсона дождь – семь недель сырости или до бабьего лета мокро будет. В Сибири этот день назывался Николой обыденным.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '12',
             'month' => '7',
             'name' => 'Петров день. Петровки. Пётр и Павел.',
@@ -969,14 +969,14 @@ class SignsTableSeeder extends Seeder
 * На святого Петра дождь – урожай худой, два дождя – ',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '14',
             'month' => '7',
             'name' => 'Летние кузьминки',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '19',
             'month' => '7',
             'name' => 'Ермий и Сисой.',
@@ -985,28 +985,28 @@ class SignsTableSeeder extends Seeder
 ',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '21',
             'month' => '7',
             'name' => 'Прокопьев день или Прокоп-жнец, жатвенник. Казанская (летняя). ',
             'description' => 'Начало уборки ржи (перед началом жатвы праведному Прокопию заказывали молебны, после чего бывали общественные трапезы). Пошли грузди, поспела черника.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '25',
             'month' => '7',
             'name' => 'Прокл-великие росы. ',
             'description' => '"На Прокла поле от росы промокло". Прокловы великие росы – лучшее средство от сглазу и от призору. До Прокла прежде рекомендовалось высушить сено грядушками.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '26',
             'month' => '7',
             'name' => 'Кирик и Улита. Гавриил.',
             'description' => '* Сухая погода сулит хорошую осень.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '29',
             'month' => '7',
             'name' => 'Афиноген',
@@ -1019,14 +1019,14 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '1',
             'month' => '8',
             'name' => 'Макрида',
             'description' => '* Смотри осень по Макриде – Макрида мокра – и осень мокра.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '2',
             'month' => '8',
             'name' => 'Ильин день.',
@@ -1040,28 +1040,28 @@ class SignsTableSeeder extends Seeder
 * На Ильин день – до обеда лето, после обеда осень. Зима с летом борется.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '4',
             'month' => '8',
             'name' => 'Марья-сильные росы. ',
             'description' => 'На Марию сильные росы – льны будут серы и косы.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '5',
             'month' => '8',
             'name' => 'Трофим-бессонник',
             'description' => 'пора усиленной рабочей страды. "Долго спать – добра не видать".',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '6',
             'month' => '8',
             'name' => 'Борис и Глеб.',
             'description' => 'Не рекомендовалось выезжать в поле – чтобы там не было пожара. "На Глеба и Бориса за хлеб не берися". "На Борис и Глеб поспевает хлеб".',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '7',
             'month' => '8',
             'name' => 'Анна летняя.',
@@ -1071,7 +1071,7 @@ class SignsTableSeeder extends Seeder
 * Светлая и тёплая погода предвещает холодную зиму, если же идет дождь – зима снежна и тёплая.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '11',
             'month' => '8',
             'name' => 'Калинов день. ',
@@ -1080,7 +1080,7 @@ class SignsTableSeeder extends Seeder
 * Если спелый овёс во второй раз зазеленеет – осень будет ненастной.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '12',
             'month' => '8',
             'name' => 'Сила и Силуан, Силов день.',
@@ -1089,7 +1089,7 @@ class SignsTableSeeder extends Seeder
 * Сильное мерцание звезд на рассвете обещает в ближайшие дни дождь.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '14',
             'month' => '8',
             'name' => 'Авдотья-малиновка или огуречница',
@@ -1103,21 +1103,21 @@ class SignsTableSeeder extends Seeder
 * Если ветер с вихрями на Спаса – жди зиму снежную с морозами.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '15',
             'month' => '8',
             'name' => 'Степан-сеновал.',
             'description' => '* Каков Степан, таков сентябрь.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '16',
             'month' => '8',
             'name' => 'Антон-вихровей.',
             'description' => '* Если на Антона вихрь – ожидай снежную зиму.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '17',
             'month' => '8',
             'name' => 'Евдокия-огуречница семь отроков.',
@@ -1126,14 +1126,14 @@ class SignsTableSeeder extends Seeder
 * Срывают огурцы, убирают чеснок, лук.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '18',
             'month' => '8',
             'name' => 'Евстигней-житник.',
             'description' => '* Каков Евстигней, таков и декабрь.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '19',
             'month' => '8',
             'name' => 'Преображение Господне',
@@ -1146,7 +1146,7 @@ class SignsTableSeeder extends Seeder
 * Каков этот день, такой и январь.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '21',
             'month' => '8',
             'name' => 'Мирон-ветрогон.',
@@ -1154,14 +1154,14 @@ class SignsTableSeeder extends Seeder
 * Ранние инеи в конце лета – к урожаю будущего года.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '23',
             'month' => '8',
             'name' => 'Лаврентий',
             'description' => '* На Лаврентия смотрят в полдни на воду – коли тиха, то осень будет тихая, а зима без вьюг.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '27',
             'month' => '8',
             'name' => 'Михей-тиховей. Начало листопада.',
@@ -1169,7 +1169,7 @@ class SignsTableSeeder extends Seeder
 * Ветры тихие в этот день – жди ведренной осени. А если буря на Михей – жди ненастный сентябрь.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '28',
             'month' => '8',
             'name' => 'Успение Богородицы. Госпожиный день, Госпожинки, Пречистая.',
@@ -1182,7 +1182,7 @@ class SignsTableSeeder extends Seeder
 С Успенья солнце засыпает. Успенье провожай, а осень встречай.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '29',
             'month' => '8',
             'name' => 'Третий Спас. Льняной «Спас на полотне»',
@@ -1192,14 +1192,14 @@ class SignsTableSeeder extends Seeder
 * Если журавли полетят к третьему Спасу, то на Покров (14 октября) будет мороз, а не полетят, то зима придёт позже.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '31',
             'month' => '8',
             'name' => 'на Флора и Лавра, лошадиный праздник – на лошадях не работают.',
             'description' => 'На эти дни приходились языческие празднования лошадям.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '0',
             'month' => '9',
             'name' => 'Сентябрь. Первый месяц осени. Рюень. Ревун. Летопроводец. Верестень. Вересень. Листопроводец. Задумчевый. Рябинник. Зоревник. Хмурень.',
@@ -1218,35 +1218,35 @@ class SignsTableSeeder extends Seeder
 По народному календарю осени отводится время от второго Спаса до Кузьминок (14 ноября).',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '1',
             'month' => '9',
             'name' => 'Андрей Стратилат. Тимофей.',
             'description' => 'Стратилат-тепляк, под которым подразумевают тёплый ветер',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '2',
             'month' => '9',
             'name' => 'Самойлин день Бога о мужике молит.',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '3',
             'month' => '9',
             'name' => 'Фаддей',
             'description' => ' Если на Фаддея ясно, то и еще 4 недели будет ясная погода.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '4',
             'month' => '9',
             'name' => 'Агафон-Огуменник',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '5',
             'month' => '9',
             'name' => 'Лупповские ранние морозы.',
@@ -1257,7 +1257,7 @@ class SignsTableSeeder extends Seeder
 ',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '8',
             'month' => '9',
             'name' => 'Наталья-Овсяница.',
@@ -1270,14 +1270,14 @@ class SignsTableSeeder extends Seeder
 Праздник Лады (в году их шесть, с начала марта до середины сентября).',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '10',
             'month' => '9',
             'name' => 'Анна-Скирдница',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '11',
             'month' => '9',
             'name' => 'Иван-Постный. Иоанн-Предтеча.',
@@ -1286,7 +1286,7 @@ class SignsTableSeeder extends Seeder
 * На Ивана Постного собирают коренья, а на Купалу – травы.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '14',
             'month' => '9',
             'name' => 'Семёнов день (другие названия: Семён-летопроводец. Семен-день, Марфино лето).',
@@ -1300,21 +1300,21 @@ class SignsTableSeeder extends Seeder
 14 (11) сентября – древний праздник , посвящённый семейному благополучию. Праздник заканчивается трапезой и хороводом около самой старшей из женщин, которая держит в руках овсяный хлеб. Хлеб затем делят и раздают для лечения людей и домашней живности.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '17',
             'month' => '9',
             'name' => 'Луков день,',
             'description' => 'выкапывают из гряд поздний лук.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '19',
             'month' => '9',
             'name' => 'Михайловские заморозки.',
             'description' => '* Если после Михайловских морозов на деревьях нарастает иней, надо ждать больших снегов зимою.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '20',
             'month' => '9',
             'name' => 'Созонт и Лука. ',
@@ -1324,7 +1324,7 @@ class SignsTableSeeder extends Seeder
 * Холодную зиму предвещает обилие шелухи на луковицах.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '21',
             'month' => '9',
             'name' => ' Рождество Богородицы. ',
@@ -1340,14 +1340,14 @@ class SignsTableSeeder extends Seeder
 * Начинается луковая неделя.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '22',
             'month' => '9',
             'name' => 'Память праведных Иоакима и Анны, родителей Пресвятой Девы',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '23',
             'month' => '9',
             'name' => 'Пётр и Павел. Рябинники.',
@@ -1356,28 +1356,28 @@ class SignsTableSeeder extends Seeder
 * Мало рябины – сухая осень, а много – суровая зима.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '24',
             'month' => '9',
             'name' => 'Федора осенняя – третья встреча осени.',
             'description' => 'Федорин день – "Всякое лето кончается". Не всякое лето до Федора дотянет, даже бабье.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '25',
             'month' => '9',
             'name' => 'Семён (Симеон). Юлиан (Иулиан). Артамон (Автоном)',
             'description' => '* Змеи уходят в лес, где и прячутся до будущего года.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '26',
             'month' => '9',
             'name' => 'Корнилий',
             'description' => '* На Корнилия полагалось убрать все корнеплоды – рост их прекращается.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '27',
             'month' => '9',
             'name' => 'Воздвиженье Креста Господня',
@@ -1394,7 +1394,7 @@ class SignsTableSeeder extends Seeder
 По преданиям, в эти дни змеи праздновали свадьбу своего царя. В этот же день запрещалось ходить в лес.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '28',
             'month' => '9',
             'name' => 'Никита-гусепролёт. Никита-гусарь.',
@@ -1402,7 +1402,7 @@ class SignsTableSeeder extends Seeder
 * Гуси летят – зимушку на хвосте тащат.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '30',
             'month' => '9',
             'name' => 'Всесвятские бабьи именины',
@@ -1410,7 +1410,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '0',
             'month' => '10',
             'name' => 'Октябрь',
@@ -1427,21 +1427,21 @@ class SignsTableSeeder extends Seeder
 ',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '1',
             'month' => '10',
             'name' => 'Арина-журавлиный лёт.',
             'description' => '* Если на Арину журавли полетят, то на Покров (14 октября) надо ждать первого мороза. А если их не видно в этот день – раньше Артемьего дня (2 ноября) не ударить ни одному морозу.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '2',
             'month' => '10',
             'name' => 'Трофим, Зосима-пчелиный заступник.',
             'description' => 'Ульи отправляют на зиму в омшанник. Иногда дело это откладывают до Савватия (10 октября). До Савватея продолжается пчелиная девятина. Устраиваются Трофимовы вечерки: пришло время выбирать женихов.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '3',
             'month' => '10',
             'name' => 'Астафьев день.',
@@ -1453,35 +1453,35 @@ class SignsTableSeeder extends Seeder
 * Южный ветер сулит хороший урожай озимых.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '4',
             'month' => '10',
             'name' => 'Кондраты с Игнатым – богатеть богатым.',
             'description' => '«Не присядешь без дела на Игната да Кондрата - будешь всю жизнь богатым», - гласит народная поговорка. Основной работой к 4 октября на Руси становилась сушка и обмолот снопов с зерном нового урожая. Крестьяне сушили снопы в овинах и обмолачивали их на гумнах.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '5',
             'month' => '10',
             'name' => 'начало осени',
             'description' => 'этот день почитался как начало третьего времени года – осени, которая в старину продолжалась вплоть до Рождества.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '6',
             'month' => '10',
             'name' => 'Если к этому дню лист с берёзы не опал, то снег ляжет поздно.',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '7',
             'month' => '10',
             'name' => 'Фекла-Заревница',
             'description' => '(есть два толкования слова «заревница» – от слова «зарево», «пожар», что случается во время молотьбы, и от слова «заря» – обычно с зарёю начиналась молотьба хлебов в овинах.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '8',
             'month' => '10',
             'name' => 'Сергей-капустник. Рубят капусту.',
@@ -1490,28 +1490,28 @@ class SignsTableSeeder extends Seeder
 * Если первый снег сухой – жди хорошего лета. Если он упадет, когда на вишне нет листа – жди скорую зиму.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '10',
             'month' => '10',
             'name' => 'Зосим и Савва — покровители пчёл — печеньем на меду народ потчуют',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '11',
             'month' => '10',
             'name' => 'Савватей-Пчельник',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '13',
             'month' => '10',
             'name' => 'Григорий',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '14',
             'month' => '10',
             'name' => 'Покров Пресвятой Богородицы.',
@@ -1527,7 +1527,7 @@ class SignsTableSeeder extends Seeder
 Первые инеи покрывают землю. Окончены полевые работы, идёт подготовка к зиме. С этих дней начинали топить в избах.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '17',
             'month' => '10',
             'name' => 'Ерофей',
@@ -1537,7 +1537,7 @@ class SignsTableSeeder extends Seeder
 На Ерофеев день лешие дурят по лесам – бродят, кричат, хлопают в ладоши, хохочут, но с пением первых петухов проваливаются сквозь землю – до будущего тепла. Суеверные люди в лес не ходят.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '18',
             'month' => '10',
             'name' => 'Харитины-первые холстины',
@@ -1549,14 +1549,14 @@ class SignsTableSeeder extends Seeder
 ',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '19',
             'month' => '10',
             'name' => 'Фома – бери всё задарма.',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '20',
             'month' => '10',
             'name' => 'Сергий',
@@ -1565,28 +1565,28 @@ class SignsTableSeeder extends Seeder
 * Если Сергий снежком покроется, то с ноябрьской Матрёны (22 ноября) зима встанет на ноги.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '21',
             'month' => '10',
             'name' => '"Трифон шубу чинит, Пелагея рукавички шьёт"',
             'description' => '* С Трифона-Пелагеи – всё холоднее.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '22',
             'month' => '10',
             'name' => 'Яков',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '23',
             'month' => '10',
             'name' => 'Евлампий',
             'description' => '* На Евлампия рога месяца кажут в ту сторону, откуда дуть ветрам. Если рога на полночь (на север) – быть скорой зиме и снег ляжет посуху; если на полдень (на юг) – скорой зимы не жди, будет грязь да слякоть до самой Казанской (4 ноября), осень снегом не умоется, в белый кафтан не нарядится.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '25',
             'month' => '10',
             'name' => 'на Прова до полуночи наблюдали звёзды. ',
@@ -1595,7 +1595,7 @@ class SignsTableSeeder extends Seeder
 Сажар-звезда. <ось> – Стажар – так ещё называли жердь, которая ставилась в середине стога.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '27',
             'month' => '10',
             'name' => 'Парасковья',
@@ -1607,14 +1607,14 @@ class SignsTableSeeder extends Seeder
 ',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '28',
             'month' => '10',
             'name' => 'Ефимий Осенний.',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '31',
             'month' => '10',
             'name' => 'Лука',
@@ -1623,7 +1623,7 @@ class SignsTableSeeder extends Seeder
         ]);
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '0',
             'month' => '11',
             'name' => 'Ноябрь',
@@ -1635,7 +1635,7 @@ class SignsTableSeeder extends Seeder
 Листопад прошёл быстро – будет холодная зима.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '4',
             'month' => '11',
             'name' => 'Зимняя (осенняя) Казанская.',
@@ -1649,7 +1649,7 @@ class SignsTableSeeder extends Seeder
 * Выезжай в Казанскую на колесах, а полозья-то в телегу клади.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '8',
             'month' => '11',
             'name' => 'Дмитриев день',
@@ -1660,7 +1660,7 @@ class SignsTableSeeder extends Seeder
 * Дмитриев день перевоза не ждёт.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '10',
             'month' => '11',
             'name' => 'Парасковья-Льняница',
@@ -1669,14 +1669,14 @@ class SignsTableSeeder extends Seeder
 ',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '11',
             'month' => '11',
             'name' => 'Аврам-Овчар, Анастасия-Овечница.',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '12',
             'month' => '11',
             'name' => 'Зиновий',
@@ -1688,14 +1688,14 @@ class SignsTableSeeder extends Seeder
 Если на Зиновия волки стаями ходят — к голоду, мору или войне',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '13',
             'month' => '11',
             'name' => 'Юровая',
             'description' => 'так называли свой праздник сибирские рыбаки. Накануне Кузьминок переводили кур в зимние закуты, метили старых и слабых',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '14',
             'month' => '11',
             'name' => 'Кузьминки',
@@ -1707,14 +1707,14 @@ class SignsTableSeeder extends Seeder
 Свадебки. Поют: "Матушка Кузьма-Демьян, Скуй нам свадебку крепко-накрепко, До седой головушки, До долгой бородушки!',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '18',
             'month' => '11',
             'name' => 'Галактион. День Млечности',
             'description' => 'Девицы молились о женихах и умоляли Всевышнего послать им настоящего мужчину',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '19',
             'month' => '11',
             'name' => 'Павел и Варлаам',
@@ -1724,7 +1724,7 @@ class SignsTableSeeder extends Seeder
 * Если лёд на реке к этому дню становится грудами, то и хлеба будут груды, а гладко – так и хлеба будет гладко.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '20',
             'month' => '11',
             'name' => 'Федот Ледостав.',
@@ -1733,7 +1733,7 @@ class SignsTableSeeder extends Seeder
 ',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '21',
             'month' => '11',
             'name' => 'Михайлов день.',
@@ -1745,7 +1745,7 @@ class SignsTableSeeder extends Seeder
 * Если на Михайлов день иней – жди больших снегов, а если этот день начнётся туманом – быть ростепели.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '22',
             'month' => '11',
             'name' => 'Матрёна зимняя. ',
@@ -1758,7 +1758,7 @@ class SignsTableSeeder extends Seeder
 * Если на Матрёну стоит хорошая погода, то стоять ей целых три недели.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '23',
             'month' => '11',
             'name' => 'Ераст – на всё горазд: и на холод и на голод и на бездорожную метелицу.',
@@ -1767,7 +1767,7 @@ class SignsTableSeeder extends Seeder
 * Большой туман предвещает большую оттепель.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '24',
             'month' => '11',
             'name' => 'Федор-студит',
@@ -1778,21 +1778,21 @@ class SignsTableSeeder extends Seeder
 * Если в Федоров день дождь или снег, быть оттепели до Введенья (4 декабря).',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '25',
             'month' => '11',
             'name' => 'Иван Милостивый.',
             'description' => '* Если на Ивана Милостивого дождь или снег – быть оттепелям до Введения (4 декабря).',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '27',
             'month' => '11',
             'name' => 'Филипп',
             'description' => '* Иней на Филиппа – урожай на овес.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '28',
             'month' => '11',
             'name' => 'Гурьян (Гурий на пегой кобыле). ',
@@ -1803,7 +1803,7 @@ class SignsTableSeeder extends Seeder
 * Если на Гурьяна снег, то лежать ему до половодья.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '29',
             'month' => '11',
             'name' => 'Матвей',
@@ -1811,7 +1811,7 @@ class SignsTableSeeder extends Seeder
 * В Матвеев день облака низко идут – будет стужа.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '33',
             'month' => '11',
             'name' => 'Поговорки, присловия, приметы относящиеся к осени',
@@ -1968,7 +1968,7 @@ class SignsTableSeeder extends Seeder
 
 
 
-        Sign::create([
+        Superstition::create([
             'day' => '0',
             'month' => '12',
             'name' => 'Декабрь',
@@ -1982,21 +1982,21 @@ class SignsTableSeeder extends Seeder
 ',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '1',
             'month' => '12',
             'name' => 'Платон и Роман',
             'description' => '* Каков Платон и Роман, такова и зима. Если случится в течении дня перемена, стольким же переменам подвергнется и зима.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '3',
             'month' => '12',
             'name' => 'Прокл',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '4',
             'month' => '12',
             'name' => 'Введенские ранние морозы.',
@@ -2006,35 +2006,35 @@ class SignsTableSeeder extends Seeder
 * На Введенье случается и толстое леденье.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '5',
             'month' => '12',
             'name' => 'Прокоп',
             'description' => 'Мужчины устраивали братскую трапезу в складчину',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '6',
             'month' => '12',
             'name' => 'Митрофан',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '7',
             'month' => '12',
             'name' => 'Екатерина',
             'description' => 'Мороз-Катерина (ранние морозы)',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '8',
             'month' => '12',
             'name' => 'Климент, климентьев день – зима клин клином вышибает.',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '9',
             'month' => '12',
             'name' => 'Юрьев день. ',
@@ -2043,35 +2043,35 @@ class SignsTableSeeder extends Seeder
 * Медведь в берлоге засыпает.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '10',
             'month' => '12',
             'name' => 'Роман',
             'description' => 'В этот день рыбы ложатся в зимовальные ямы, на дно.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '12',
             'month' => '12',
             'name' => 'Парамон',
             'description' => '* На Парамона утро красное – быть декабрю ясным. На Парамона снег – быть метелям вплоть до Николина дня (19 декабря).',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '13',
             'month' => '12',
             'name' => 'Андрей',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '15',
             'month' => '12',
             'name' => 'Аввакум',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '17',
             'month' => '12',
             'name' => 'Варвара',
@@ -2084,14 +2084,14 @@ class SignsTableSeeder extends Seeder
 * Варвара ночи урвала, дни притачала.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '18',
             'month' => '12',
             'name' => 'Мороз Савва (средние морозы)',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '19',
             'month' => '12',
             'name' => 'Никола (зимний), холодный. ',
@@ -2103,21 +2103,21 @@ class SignsTableSeeder extends Seeder
 * Коли зима на Николин день след заметает – дороге не стоять.',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '20',
             'month' => '12',
             'name' => 'Абросимов день. ',
             'description' => 'Память святителя Амвросия',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '21',
             'month' => '12',
             'name' => 'Потап',
             'description' => 'Память преподобного Патапия',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '22',
             'month' => '12',
             'name' => 'Анна',
@@ -2126,63 +2126,63 @@ class SignsTableSeeder extends Seeder
 Колядки – до середины января (Зимние Святки). Ряженые ходят с песнями и шутками-прибаутками по дворам, выпрашивая угощение: «Щедрик-ведрик, дайте вареник, грудочку кашки, колечко колбаски...» ',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '23',
             'month' => '12',
             'name' => 'Евграф',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '24',
             'month' => '12',
             'name' => 'Даниил',
             'description' => 'Почитают преподобного Даниила Столпника',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '25',
             'month' => '12',
             'name' => 'Спиридон-поворот',
             'description' => 'Спиридон-солнцеворот. "Солнце – на лето, зима – на мороз."',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '26',
             'month' => '12',
             'name' => 'Евстрат. Евгений.',
             'description' => '',
         ]);
 
-        Sign::create([
+        Superstition::create([
             'day' => '27',
             'month' => '12',
             'name' => 'Каллиники',
             'description' => '',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '28',
             'month' => '12',
             'name' => 'Трифон',
             'description' => '* На Трифона звездисто (ясно) – к поздней весне.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '19',
             'month' => '12',
             'name' => 'Аггей – Иней сей.',
             'description' => '* Коли на Аггея сильный мороз, то он простоит до Крещения (19 января). А если в этот день на деревьях иней, то Святки (8 янв) будут тёплыми.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '30',
             'month' => '12',
             'name' => 'Даниил-зимоуказчик.',
             'description' => '* Иней на Даниила – к тёплым святкам',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '0',
             'month' => '1',
             'name' => 'Январь',
@@ -2196,7 +2196,7 @@ class SignsTableSeeder extends Seeder
 * Бойся январской весны.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '1',
             'month' => '1',
             'name' => 'Илья Муромец.',
@@ -2205,7 +2205,7 @@ class SignsTableSeeder extends Seeder
 * Мороз и малый снежок – к урожаю хлебов, а если тепло и нет снега – к неурожаю.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '2',
             'month' => '1',
             'name' => 'Иоанн Кронштадтский.',
@@ -2214,21 +2214,21 @@ class SignsTableSeeder extends Seeder
 * Яблочный день, в который полагалось трясти яблони от снега, чтобы урожай хороший был.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '3',
             'month' => '1',
             'name' => 'Пётр. Ульяна.',
             'description' => 'Поутру шли торкать зерно в сусеке деревянной лопатой.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '4',
             'month' => '1',
             'name' => 'день Анастасии-узоразрешительницы – покровительницы беременных',
             'description' => '',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '5',
             'month' => '1',
             'name' => 'Федул Саторнин.',
@@ -2237,7 +2237,7 @@ class SignsTableSeeder extends Seeder
 * На Федула ветер подул к урожаю',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '6',
             'month' => '1',
             'name' => 'Рождественский Сочельник. ',
@@ -2246,119 +2246,119 @@ class SignsTableSeeder extends Seeder
 В ночь перед Рождеством кончается сорокодневный пост',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '8',
             'month' => '1',
             'name' => 'Бабьи каши – чествуют повивальных бабок.',
             'description' => 'Праздник каш. Колядки. Васильевские средние морозы',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '9',
             'month' => '1',
             'name' => 'Степан. Федор.',
             'description' => '',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '10',
             'month' => '1',
             'name' => 'День Агафии и Домны. Никанор. Домочадцев день.',
             'description' => '',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '11',
             'month' => '1',
             'name' => 'Фаддей, Марк, Иоанн.',
             'description' => '',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '12',
             'month' => '1',
             'name' => 'Анисья',
             'description' => '',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '13',
             'month' => '1',
             'name' => 'Мелания. Василий',
             'description' => '',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '14',
             'month' => '1',
             'name' => 'Васильев день. Старый Новый год',
             'description' => '* Утром встряхивают плодовые деревья',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '15',
             'month' => '1',
             'name' => 'День преподобного Серафима Саровского.',
             'description' => '',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '16',
             'month' => '1',
             'name' => 'Гордей. Малахия',
             'description' => '',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '17',
             'month' => '1',
             'name' => 'Феклистов день',
             'description' => 'Оканчиваются Рождественские святки',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '18',
             'month' => '1',
             'name' => 'Апполинария',
             'description' => 'Крещенский сочельник. Навечерие Богоявления. Однодневный пост.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '21',
             'month' => '1',
             'name' => 'Василисы зимние. Емельяны-бураны.',
             'description' => '',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '22',
             'month' => '1',
             'name' => 'День св. Филлипа, митрополита Московского',
             'description' => '',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '23',
             'month' => '1',
             'name' => 'Григорий-летоуказатель. День св. Феофана Затворника.',
             'description' => '* Иней на стогах – к мокрому лету.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '24',
             'month' => '1',
             'name' => 'Михаил. Феодосий. Федосеевские средние морозы.',
             'description' => '* На Феодосья тепло – к ранней весне',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '25',
             'month' => '1',
             'name' => 'Татьяна',
             'description' => '* В Татьянин день проглянет солнышко – к раннему прилёту птиц, а если пойдёт снег – лето будет дождливое.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '30',
             'month' => '1',
             'name' => 'Антон-перезимник.',
@@ -2367,14 +2367,14 @@ class SignsTableSeeder extends Seeder
 * Лиса в тёплые дни лежит на снегу – к морозам.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '31',
             'month' => '1',
             'name' => 'Афанасий',
             'description' => 'Афанасьевские средние морозы.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '0',
             'month' => '2',
             'name' => 'Февраль',
@@ -2394,7 +2394,7 @@ class SignsTableSeeder extends Seeder
 * Птицы перед теплом садятся на верхушки деревьев.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '1',
             'month' => '2',
             'name' => 'Макарьев день',
@@ -2402,7 +2402,7 @@ class SignsTableSeeder extends Seeder
 * Если небо звёздное, то зима долго простоит',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '2',
             'month' => '2',
             'name' => 'Ефимий',
@@ -2411,7 +2411,7 @@ class SignsTableSeeder extends Seeder
 * Иней в этот день – к осенним ночным заморозкам.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '3',
             'month' => '2',
             'name' => 'Максим-исповедник',
@@ -2419,7 +2419,7 @@ class SignsTableSeeder extends Seeder
 * Взойдет месяц из-за облака – быть урожаю',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '4',
             'month' => '2',
             'name' => 'Тимофей-полузимник',
@@ -2429,14 +2429,14 @@ class SignsTableSeeder extends Seeder
 * Начало метелей.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '5',
             'month' => '2',
             'name' => 'Климент',
             'description' => '',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '6',
             'month' => '2',
             'name' => 'Аксинья',
@@ -2445,28 +2445,28 @@ class SignsTableSeeder extends Seeder
 * Какова Аксинья, такова и весна.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '7',
             'month' => '2',
             'name' => 'Григорий Богослов.',
             'description' => '* Каков день с утра до полудня, такова будет и 1-я половина следующей зимы, а с полудня до вечера – предвещает другую половину зимы.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '8',
             'month' => '2',
             'name' => 'Ксенофонт. Фёдор-поминальник.',
             'description' => '* Если на Ксенофонта мыши вылезли из-под снега – жди оттепели.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '9',
             'month' => '2',
             'name' => 'Иоанн Златоуст',
             'description' => '',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '10',
             'month' => '2',
             'name' => 'Ефрем. День преподобного Ефрема Сирина.',
@@ -2477,14 +2477,14 @@ class SignsTableSeeder extends Seeder
 ',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '14',
             'month' => '2',
             'name' => 'Трифон',
             'description' => '* Звёздно (ясно ночью) – весна поздняя, а зима еще долго продлится.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '15',
             'month' => '2',
             'name' => '"На Сретение зима с летом встретились". Сретенская вода – целительна.',
@@ -2497,84 +2497,84 @@ class SignsTableSeeder extends Seeder
 * На Сретенье капель – урожай на пшеницу.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '16',
             'month' => '2',
             'name' => 'Симеон и Анна – расчинай починки. Власий. Семён с Анной сбрую починяют',
             'description' => '',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '17',
             'month' => '2',
             'name' => 'Никола Студёный.',
             'description' => '',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '18',
             'month' => '2',
             'name' => ' защитный обряд опахивания вокруг деревни.',
             'description' => '',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '19',
             'month' => '2',
             'name' => 'Вукол-телятник. ',
             'description' => 'Начало весеннего отела коров. Окуривание в этот день хлева чабрецом – помогает сохранению хорошего вкуса молока в течение всего года, а также способствует рождению у коров здорового потомства.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '20',
             'month' => '2',
             'name' => 'Лука',
             'description' => 'Принято было печь пироги с луком.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '22',
             'month' => '2',
             'name' => 'Никифоры, Панкраты. Лаптев день.',
             'description' => '* Не у всякого Панкрата – в закромах богато.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '23',
             'month' => '2',
             'name' => 'Прохор',
             'description' => 'Хоть февраль и злится, но весну чует.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '24',
             'month' => '2',
             'name' => 'Власий',
             'description' => 'Пришёл Прохор да Влас – никак скоро весна у нас.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '25',
             'month' => '2',
             'name' => 'Мелетий и Алексий.',
             'description' => 'В течение трёх дней на утренние морозы выставляли зерно, полагая, что это улучшает урожай.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '27',
             'month' => '2',
             'name' => 'Кирилл',
             'description' => '* Хорошая погода – к морозам.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '28',
             'month' => '2',
             'name' => 'Онисим Овчарник. ',
             'description' => 'В эти дни зима с весной начинают борьбу – кому дальше идти.',
         ]);
 
-       Sign::create([
+       Superstition::create([
             'day' => '33',
             'month' => '2',
             'name' => 'Поговорки, присловья, приметы, относящиеся к зиме',

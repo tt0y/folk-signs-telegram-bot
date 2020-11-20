@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\SignRequest;
-use App\Models\Sign;
+use App\Models\Superstition;
 use Illuminate\Http\Request;
 
-class SignController extends Controller
+class SuperstitionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,18 +15,18 @@ class SignController extends Controller
      */
     public function index()
     {
-        return Sign::paginate();
+        return Superstition::paginate();
     }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return Sign|\Illuminate\Database\Eloquent\Model
+     * @return Superstition|\Illuminate\Database\Eloquent\Model
      */
     public function store(Request $request)
     {
-        return Sign::create($request->validated());
+        return Superstition::create($request->validated());
     }
 
     /**
@@ -38,7 +38,7 @@ class SignController extends Controller
      */
     public function show($day, $month)
     {
-        $sign = Sign::where([
+        $sign = Superstition::where([
             ['day', '=', $day],
             ['month', '=', $month],
         ])->get()->toArray();
@@ -55,7 +55,7 @@ class SignController extends Controller
      */
     public function update(SignRequest $request, $id)
     {
-        $sign = Sign::findOrFail($id);
+        $sign = Superstition::findOrFail($id);
         $sign->fill($request->except(['sign_id']));
         $sign->save();
 
@@ -65,12 +65,12 @@ class SignController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Sign  $sign
+     * @param  \App\Models\Superstition  $sign
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Sign $sign)
+    public function destroy(Superstition $sign)
     {
-        $sign = Sign::findOrFail($sign->id);
+        $sign = Superstition::findOrFail($sign->id);
         if($sign->delete()) return response(null, 204);
     }
 }

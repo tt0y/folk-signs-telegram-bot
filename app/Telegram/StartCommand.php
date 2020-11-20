@@ -2,7 +2,7 @@
 
 namespace App\Telegram;
 
-use App\Models\Sign;
+use App\Models\Superstition;
 use App\Models\TelegramUser;
 use Illuminate\Support\Facades\Log;
 use Telegram\Bot\Actions;

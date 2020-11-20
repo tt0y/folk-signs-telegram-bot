@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SignController;
+use App\Http\Controllers\SuperstitionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +17,4 @@ use App\Http\Controllers\SignController;
 
 Route::resource('v1/superstition', 'SignController', ['except' => ['create', 'edit']]);
 
-Route::get('v1/superstition/{day}/{month}', 'SignController@show');
+Route::get('v1/superstition/{day}/{month}', 'SuperstitionController@show');

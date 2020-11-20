@@ -3,7 +3,7 @@
 namespace App\Telegram;
 
 use App\helpers;
-use App\Models\Sign;
+use App\Models\Superstition;
 use Telegram\Bot\Actions;
 use Telegram\Bot\Commands\Command;
 
@@ -34,7 +34,7 @@ class todaySuperstitionCommand extends Command
     {
         $date = helpers::dateExtra();
 
-        $sign = Sign::where([
+        $sign = Superstition::where([
             ['day', '=', $date['day']],
             ['month', '=', $date['month']],
         ])->get()->toArray();
