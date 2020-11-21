@@ -3,9 +3,11 @@
 An application that tells what superstition is associated with a specified day
 
 
+
 Telegram bot name:
 
-@primetkiBot
+https://t.me/primetki_bot
+
 
 
 Available commands
