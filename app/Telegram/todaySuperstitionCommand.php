@@ -32,17 +32,11 @@ class todaySuperstitionCommand extends Command
      */
     public function handle()
     {
-        $date = helpers::dateExtra();
+        $superstition = new Superstition;
 
-        $sign = Superstition::where([
-            ['day', '=', $date['day']],
-            ['month', '=', $date['month']],
-        ])->get()->toArray();
+        $data = $superstition->find(helpers::dateExtra());
 
-        if (isset($sign[0]))
-            $text = $sign[0]['name'] . PHP_EOL . $sign[0]['description'];
-        else
-            $text = __('Долгие наблюдения за природой не дали резултатов.'. PHP_EOL . 'Примет на сегодня нет');
+        $text = $data['name'] . PHP_EOL . $data['description'];
 
         $this->replyWithMessage(compact('text'));
     }

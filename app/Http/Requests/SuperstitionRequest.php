@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class SignRequest extends FormRequest
+class SuperstitionRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.

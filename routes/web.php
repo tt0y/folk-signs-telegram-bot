@@ -24,7 +24,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::middleware('auth')->prefix('admin')->namespace('Backend')->name('admin.')->group(function (){
     Route::get('/', 'DashboardController@index')->name('index');
 
-    Route::get('/settings', 'SettingController@index')->name('settings.index');
+    Route::get( '/settings', 'SettingController@index')->name('settings.index');
     Route::post('/settings', 'SettingController@store')->name('settings.store');
     Route::post('/settings/getwebhookinfo', 'SettingController@getWebhookInfo')->name('settings.getwebhookinfo');
     Route::post('/settings/setwebhook', 'SettingController@setWebhook')->name('settings.setwebhook');

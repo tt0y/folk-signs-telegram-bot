@@ -2,12 +2,29 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\SignRequest;
+use App\Http\Requests\SuperstitionRequest;
 use App\Models\Superstition;
+use App\Services\Superstition\SuperstitionService;
 use Illuminate\Http\Request;
 
 class SuperstitionController extends Controller
 {
+    /**
+     * @var SuperstitionService
+     */
+    protected SuperstitionService $superstitionService;
+
+    /**
+     * SuperstitionController constructor.
+     * @param SuperstitionService $superstitionService
+     */
+    public function __construct(
+        SuperstitionService $superstitionService
+    )
+    {
+        $this->superstitionService = $superstitionService;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -19,58 +36,58 @@ class SuperstitionController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return Superstition|\Illuminate\Database\Eloquent\Model
+     * @param Request $request
      */
     public function store(Request $request)
     {
-        return Superstition::create($request->validated());
+        $data = $request->getFormData();
+        $this->superstitionService->storeSuperstition($data);
     }
 
     /**
      * Display the specified resource.
      *
+     * @param Superstition $superstition
      * @param $day
      * @param $month
      * @return \Illuminate\Http\JsonResponse
      */
-    public function show($day, $month)
+    public function show(Superstition $superstition, $day, $month)
     {
-        $sign = Superstition::where([
-            ['day', '=', $day],
-            ['month', '=', $month],
-        ])->get()->toArray();
+        $data = $superstition->find([
+            'day' => $day,
+            'month' => $month
+        ]);
 
-        return response()->json($sign);
+        return response()->json($data);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param SignRequest $request
-     * @param $id
+     * @param SuperstitionRequest $request
+     * @param Superstition $superstition
      * @return \Illuminate\Http\JsonResponse
      */
-    public function update(SignRequest $request, $id)
+    public function update(SuperstitionRequest $request, Superstition $superstition)
     {
-        $sign = Superstition::findOrFail($id);
-        $sign->fill($request->except(['sign_id']));
-        $sign->save();
+        $data = $this->superstitionService->updateSuperstition($superstition, $request->all());
 
-        return response()->json($sign);
+        return response()->json($data);
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Superstition  $sign
+     * @param Superstition $superstition
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
-    public function destroy(Superstition $sign)
+    public function destroy(Superstition $superstition)
     {
-        $sign = Superstition::findOrFail($sign->id);
-        if($sign->delete()) return response(null, 204);
+        $superstition = Superstition::findOrFail($superstition->id);
+
+        if($superstition->delete())
+            return response(null, 204);
     }
 }
