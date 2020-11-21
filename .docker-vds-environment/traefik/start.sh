@@ -34,9 +34,9 @@ echo "
 
     --------------------------------------------
 
-    Web server:   	https://thesigns.ru
-    Adminer:	   	https://db-admin.thesigns.ru
-    Traefic dashboard	https://monitor.thesigns.ru
+    Web server:   	https://primetki.ru
+    Adminer:	   	https://db-admin.primetki.ru
+    Traefic dashboard	https://monitor.primetki.ru
 ===================== 🚀 Done 🚀 ===================
 "
 

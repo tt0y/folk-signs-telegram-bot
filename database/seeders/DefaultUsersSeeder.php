@@ -16,9 +16,9 @@ class DefaultUsersSeeder extends Seeder
     public function run()
     {
         User::create([
-            'name'              => 'admin@thesigns.ru',
-            'email'             => 'admin@thesigns.ru',
-            'password'          => Hash::make('admin@thesigns.ru'),
+            'name'              => 'admin@primetki.ru',
+            'email'             => 'admin@primetki.ru',
+            'password'          => Hash::make('secret'),
             'email_verified_at' => now(),
         ]);
     }
