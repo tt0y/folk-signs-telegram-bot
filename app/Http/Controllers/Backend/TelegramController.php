@@ -17,12 +17,11 @@ class TelegramController extends Controller
         $telegramUserId = $telegramEvent['from']['id'];
         $telegramChatId = $telegramEvent['chat']['id'];
 
-        if (!TelegramUser::find($telegramUserId))
-            TelegramUser::create([
-                'user_id' => $telegramUserId,
-                'chat_id' => $telegramChatId,
-                'data' => Telegram::getWebhookUpdates(),
-            ]);
+        TelegramUser::create([
+            'user_id' => $telegramUserId,
+            'chat_id' => $telegramChatId,
+            'data' => Telegram::getWebhookUpdates(),
+        ]);
 
         Telegram::commandsHandler(true);
     }
