@@ -3,7 +3,7 @@
 namespace App\Telegram;
 
 use App\helpers;
-use App\Models\Superstition;
+use App\Services\Superstition\SuperstitionService;
 use Telegram\Bot\Actions;
 use Telegram\Bot\Commands\Command;
 
@@ -28,13 +28,27 @@ class todaySuperstitionCommand extends Command
     protected $description = 'Примета на сегодня';
 
     /**
+     * @var SuperstitionService
+     */
+    protected SuperstitionService $superstitionService;
+
+    /**
+     * SuperstitionController constructor.
+     * @param SuperstitionService $superstitionService
+     */
+    public function __construct(
+        SuperstitionService $superstitionService
+    )
+    {
+        $this->superstitionService = $superstitionService;
+    }
+
+    /**
      * {@inheritdoc}
      */
     public function handle()
     {
-        $superstition = new Superstition;
-
-        $data = $superstition->find(helpers::dateExtra());
+        $data = $this->superstitionService->searchSuperstitions(helpers::dateExtra());
 
         $text = $data['name'] . PHP_EOL . $data['description'];
 

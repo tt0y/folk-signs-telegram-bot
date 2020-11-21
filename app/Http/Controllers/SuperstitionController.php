@@ -52,9 +52,9 @@ class SuperstitionController extends Controller
      * @param $month
      * @return \Illuminate\Http\JsonResponse
      */
-    public function show(Superstition $superstition, $day, $month)
+    public function show(SuperstitionService $superstition, $day, $month)
     {
-        $data = $superstition->find([
+        $data = $superstition->searchSuperstitions([
             'day' => $day,
             'month' => $month
         ]);
