@@ -13,7 +13,7 @@ use Telegram\Bot\Laravel\Facades\Telegram;
 /**
  * Class HelpCommand.
  */
-class StartCommand extends Command
+class StartCommand extends BaseCommand
 {
     /**
      * @var string Command Name

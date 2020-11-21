@@ -10,7 +10,7 @@ use Telegram\Bot\Commands\Command;
 /**
  * Class HelpCommand.
  */
-class todaySuperstitionCommand extends BaseCommand
+class yesterdaySuperstitionCommand extends BaseCommand
 {
     /**
      * @var string Command Name
@@ -20,19 +20,19 @@ class todaySuperstitionCommand extends BaseCommand
     /**
      * @var array Command Aliases
      */
-    protected $aliases = ['todaySuperstitionCommand'];
+    protected $aliases = ['yesterdaySuperstitionCommand'];
 
     /**
      * @var string Command Description
      */
-    protected $description = 'Примета на сегодня';
+    protected $description = 'Вчерашняя примета';
 
     /**
      * {@inheritdoc}
      */
     public function handle()
     {
-        $data = $this->superstitionService->searchSuperstitions(helpers::dateExtra());
+        $data = $this->superstitionService->searchSuperstitions(helpers::dateExtra(1, '-'));
 
         $text = $data['name'] . PHP_EOL . $data['description'];
 
