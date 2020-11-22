@@ -34,7 +34,7 @@ class todaySuperstitionCommand extends BaseCommand
     {
         $data = $this->superstitionService->searchSuperstitions(helpers::dateExtra());
 
-        $text = $data['name'] . PHP_EOL . $data['description'];
+        $text = helpers::getMessageFormatted($data, PHP_EOL);
 
         $this->replyWithMessage(compact('text'));
     }

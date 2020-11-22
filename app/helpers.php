@@ -25,4 +25,9 @@ class helpers
             'month' => $month,
         ];
     }
+
+    public static function getMessageFormatted(array $data = [], $itemSeparator = '')
+    {
+        return $data['name'] . $itemSeparator . $data['description'];
+    }
 }
