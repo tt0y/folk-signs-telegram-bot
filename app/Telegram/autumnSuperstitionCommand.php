@@ -15,7 +15,7 @@ class autumnSuperstitionCommand extends BaseCommand
     /**
      * @var string Command Name
      */
-    protected $name = 'today';
+    protected $name = 'autumn';
 
     /**
      * @var array Command Aliases
