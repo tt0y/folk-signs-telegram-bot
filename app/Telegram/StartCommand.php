@@ -38,7 +38,10 @@ class StartCommand extends BaseCommand
         $telegramChatId = Telegram::getWebhookUpdates()['message']['chat']['id'];
         $userName = Telegram::getWebhookUpdates()['message']['from']['username'] ?? $userName = '[UserName]';
 
-        $text = "Привет $userName! Хочешь приметку на сегодня? Жми --> /today";
+        $text = "Привет $userName! " . PHP_EOL . PHP_EOL
+            . "Приметы на сегодня --> /today" . PHP_EOL
+            . "Приметы на завтра  --> /tomorrow" . PHP_EOL
+            . "Вчерашние приметы  --> /yesterday";
 
         $keyboard = [
             //['/today'],
