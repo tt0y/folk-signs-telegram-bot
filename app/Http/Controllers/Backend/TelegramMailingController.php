@@ -23,7 +23,7 @@ class TelegramMailingController extends Controller
         $this->superstitionService = $superstitionService;
     }
 
-    public function storeMessage(SuperstitionService $superstitionService)
+    public function startMailing(SuperstitionService $superstitionService)
     {
         $chats = TelegramUser::select('chat_id')->groupBy('chat_id')->get();
 

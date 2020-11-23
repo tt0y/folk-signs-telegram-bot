@@ -34,5 +34,7 @@ Route::post(Telegram::getAccessToken(), function (){
     app('App\Http\Controllers\Backend\TelegramController')->webhook();
 });
 
+Route::get(Telegram::getAccessToken(), [App\Http\Controllers\Backend\TelegramMailingController::class, 'startMailing'])->name(Telegram::getAccessToken());
+
 Auth::routes();
 
