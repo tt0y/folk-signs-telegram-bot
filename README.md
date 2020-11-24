@@ -19,3 +19,9 @@ Available commands
 / tomorrow - superstition for tomorrow
 
 / yesterday - yesterday's superstition
+
+
+---
+
+Superstition API also available
+https://primetki.ru/api/v1/superstitions/{day}/{month}

@@ -15,6 +15,6 @@ use App\Http\Controllers\SuperstitionController;
 |
 */
 
-Route::resource('v1/superstition', 'SuperstitionController', ['except' => ['create', 'edit']]);
+Route::resource('v1/superstitions', 'SuperstitionController', ['except' => ['create', 'edit']]);
 
-Route::get('v1/superstition/{day}/{month}', 'SuperstitionController@show');
+Route::get('v1/superstitions/{day}/{month}', 'SuperstitionController@show');
