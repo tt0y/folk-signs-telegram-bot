@@ -20,8 +20,10 @@ class CreateSuperstitionsTable extends Migration
             $table->text('description')->nullable();
             $table->integer('month');
             $table->integer('day');
+            $table->index(['day', 'month']);
         });
     }
+
 
     /**
      * Reverse the migrations.
