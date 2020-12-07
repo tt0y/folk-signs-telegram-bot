@@ -15,5 +15,6 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(DefaultUsersSeeder::class);
         $this->call(SignsTableSeeder::class);
+        $this->call(DefaultTelegramUsersSeeder::class);
     }
 }
