@@ -18,11 +18,13 @@ class DefaultTelegramUsersSeeder extends Seeder
         TelegramUser::create([
             'user_id'   => '75627797',
             'chat_id'   => '75627797',
+            'data'   => '{}',
         ]);
 
         TelegramUser::create([
             'user_id'   => '75627797',
             'chat_id'   => '-1001293628226',
+            'data'   => '{}',
         ]);
     }
 }
