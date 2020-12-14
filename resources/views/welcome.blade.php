@@ -7,14 +7,14 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.79.0">
-    <title>Cover Template · Bootstrap v5.0</title>
+    <title>Primetki</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
 
 
 
     <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         .bd-placeholder-img {
@@ -34,27 +34,31 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+    <link href="/css/cover.css" rel="stylesheet">
 </head>
 <body class="d-flex h-100 text-center text-white bg-dark">
 
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-auto">
         <div>
-            <h3 class="float-md-start mb-0">Cover</h3>
+            {{--<h3 class="float-md-start mb-0">Primetki</h3>
             <nav class="nav nav-masthead justify-content-center float-md-end">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                 <a class="nav-link" href="#">Features</a>
                 <a class="nav-link" href="#">Contact</a>
-            </nav>
+            </nav>--}}
         </div>
     </header>
 
     <main class="px-3">
-        <h1>Cover your page.</h1>
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+        <h1>Телеграм-бот «Приметки» Приметы на день </h1>
+        <p class="lead">---</p>
+        <p class="lead">Что можно и чего нельзя делать в этот день</p>
+        <p class="lead">Просто спросите бота о примете на сегодня и он будет присылать вам одну народную примету каждый день</p>
+        <p class="lead">Если надоело, удалите беседу с ботом</p>
+        <p class="lead">---</p>
         <p class="lead">
-            <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+            <a href="https://t.me/PrimetkiBot" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Перейти к боту</a>
         </p>
     </main>
 
