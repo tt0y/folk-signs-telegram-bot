@@ -32,6 +32,8 @@ class Superstition extends Model
     use HasFactory;
 
     protected $fillable = [
+        'day',
+        'month',
         'name',
         'description',
     ];

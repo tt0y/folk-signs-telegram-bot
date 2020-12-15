@@ -21,13 +21,18 @@ Route::get('/', function () {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::middleware('auth')->prefix('admin')->namespace('Backend')->name('admin.')->group(function (){
-    Route::get('/', 'DashboardController@index')->name('index');
+route::group(['middleware' => 'auth', 'prefix' => 'admin'], function () {
 
-    Route::get( '/settings', 'SettingController@index')->name('settings.index');
-    Route::post('/settings', 'SettingController@store')->name('settings.store');
-    Route::post('/settings/getwebhookinfo', 'SettingController@getWebhookInfo')->name('settings.getwebhookinfo');
-    Route::post('/settings/setwebhook', 'SettingController@setWebhook')->name('settings.setwebhook');
+    // Categories
+    Route::get('/superstitions', 'Admin\SuperstitionsController@index')->name('superstitions');
+
+    Route::get('/superstitions/add', 'Admin\SuperstitionsController@addSuperstition')->name('superstitions.add');
+    Route::post('/superstitions/add', 'Admin\SuperstitionsController@addRequestSuperstition');
+
+    Route::get('/superstitions/edit/{id}', 'Admin\SuperstitionsController@editSuperstition')->name('superstitions.edit');
+    Route::post('/superstitions/edit/{id}', 'Admin\SuperstitionsController@editRequestSuperstition')->name('superstitions.edit');
+
+    Route::delete('/superstitions/delete/', 'Admin\SuperstitionsController@deleteSuperstition')->name('superstitions.delete');
 });
 
 Route::post(Telegram::getAccessToken(), function (){
