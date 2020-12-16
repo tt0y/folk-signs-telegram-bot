@@ -4,6 +4,8 @@ declare(strict_types=1);
 namespace App\Services\Superstition\Repositories;
 
 use App\Models\Superstition;
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Str;
 
 class EloquentSuperstitionRepository implements SuperstitionRepositoryInterface
 {
@@ -28,8 +30,8 @@ class EloquentSuperstitionRepository implements SuperstitionRepositoryInterface
         {
             $this->superstition = [
                 'name' => $raw[0]['name'],
-                'description' => $raw[0]['description'],
-                'link' =>  url() . '/' . $filters['day'] . '/' . $filters['month'] . '/' . str_slug($raw[0]['name']),
+                //'description' => $raw[0]['description'],
+                'description' => URL::to('/'). '/' . $filters['day'] . '/' . $filters['month'] . '/' . Str::slug($raw[0]['name']),
             ];
         }
 
