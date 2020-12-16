@@ -53,9 +53,9 @@ class SuperstitionsController extends Controller
 
         if (!$superstition) abort(404);
 
+        $superstition->day = (int)$request->input('day');
+        $superstition->month = (int)$request->input('month');
         $superstition->name = $request->input('name');
-        $superstition->day = $request->input('day');
-        $superstition->month = $request->input('name');
         $superstition->description = $request->input('description');
 
         if($superstition->save()){
