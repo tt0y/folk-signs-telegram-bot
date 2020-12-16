@@ -30,8 +30,8 @@ class EloquentSuperstitionRepository implements SuperstitionRepositoryInterface
         {
             $this->superstition = [
                 'name' => $raw[0]['name'],
-                //'description' => $raw[0]['description'],
-                'description' => URL::to('/'). '/' . $filters['day'] . '/' . $filters['month'] . '/' . Str::slug($raw[0]['name']),
+                'description' => $raw[0]['description'],
+                'link' => URL::to('/'). '/' . $filters['day'] . '/' . $filters['month'] . '/' . Str::slug($raw[0]['name']),
             ];
         }
 

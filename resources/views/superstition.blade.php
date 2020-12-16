@@ -1,16 +1,15 @@
 @extends('layouts.blog')
 @section('content')
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('/blog/img/post-bg.jpg')">
+    <header class="masthead" style="background-image: url('/blog/img/ornaments.jpg')">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="post-heading">
                         <h1>{{ $superstition->name }}</h1>
-                        <h2 class="subheading">{{ $superstition->description }}</h2>
-                        <span class="meta">Posted by
-              on {{ $superstition->day . ' ' . $superstition->month }}</span>
+                        <span class="meta">Народные приметы
+              на {{ $superstition->day . ' ' . $superstition->month }}</span>
                     </div>
                 </div>
             </div>
@@ -22,11 +21,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
-                    {{ $superstition->description }}
+                    {!! $superstition->description !!}
+
+                    <hr>
 
                     {!! $superstition->full_text !!}
-                    <p>Placeholder text by
-                        <a href="http://spaceipsum.com/">{{ $superstition->name }}</a>.
+                    <p>Приметы доступны в Telegram боте
+                        <a href="https://t.me/PrimetkiBot">PrimetkiBot</a>.
                 </div>
             </div>
         </div>
