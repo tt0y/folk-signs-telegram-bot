@@ -20,7 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/superstition/{day}/{month}/{slug}', 'SuperstitionController@showSuperstition')->name('superstition.show');
+Route::get('/{day}/{month}/{slug}', 'SuperstitionController@showSuperstition')->name('superstition.show');
 
 route::group(['middleware' => 'auth', 'prefix' => 'admin'], function () {
 

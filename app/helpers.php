@@ -28,6 +28,6 @@ class helpers
 
     public static function getMessageFormatted(array $data = [], $itemSeparator = '')
     {
-        return $data['name'] . $itemSeparator . $data['description'];
+        return $data['name'] . $itemSeparator . $data['description'] . $itemSeparator . $data['full_text'];
     }
 }
