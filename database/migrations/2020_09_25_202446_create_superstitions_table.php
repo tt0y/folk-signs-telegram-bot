@@ -15,11 +15,14 @@ class CreateSuperstitionsTable extends Migration
     {
         Schema::create('superstitions', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+
+            $table->integer('day');
+            $table->integer('month');
             $table->string('name')->nullable();
             $table->text('description')->nullable();
-            $table->integer('month');
-            $table->integer('day');
+            $table->text('full_text')->nullable();
+
+            $table->timestamps();
             $table->index(['day', 'month']);
         });
     }

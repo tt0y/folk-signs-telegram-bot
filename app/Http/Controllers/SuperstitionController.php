@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\SuperstitionRequest;
+use App\Models\Article;
 use App\Models\Superstition;
 use App\Services\Superstition\SuperstitionService;
 use Illuminate\Http\Request;
@@ -60,6 +61,26 @@ class SuperstitionController extends Controller
         ]);
 
         return response()->json($data);
+    }
+
+    /**
+     * Get superstition by link
+     *
+     * @param $day
+     * @param $month
+     * @param $slug
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|void
+     */
+    public function showSuperstition($day, $month, $slug)
+    {
+        $superstition = Superstition::where([
+            ['day', '=', $day],
+            ['month', '=', $month],
+        ])->first();
+
+        if (!$superstition) return abort(404);
+
+        return view('superstition', ['superstition' => $superstition]);
     }
 
     /**
