@@ -41,16 +41,16 @@ class helpers
         ];
     }
 
-    public static function getMessageFormatted(array $data = [], $itemSeparator = '', $doubleSeparator = false)
+    public static function getMessageFormatted(array $data = [], $itemSeparator = '', $doubleSeparator = true)
     {
         ($doubleSeparator)
-            ? $itemSeparator = $itemSeparator . $itemSeparator
-            : $itemSeparator = $itemSeparator
+            ? $itemSeparatorX2 = $itemSeparator . $itemSeparator
+            : $itemSeparatorX2 = $itemSeparator;
 
         (!empty($data['link']))
             ? $link = __('Подробнее:') . $itemSeparator . $data['link']
             : $link = '';
 
-        return $data['name'] . $itemSeparator . $data['description'] . $itemSeparator . $link;
+        return $data['name'] . $itemSeparatorX2 . $data['description'] . $itemSeparatorX2 . $link;
     }
 }
