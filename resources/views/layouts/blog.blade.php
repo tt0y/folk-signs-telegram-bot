@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Clean Blog - Start Bootstrap Theme</title>
+    <title>{{ $superstition->name }} - народные приметы на {{ $superstition->day . ' ' . \App\helpers::$months[$superstition->month] }}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/blog/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -54,24 +54,16 @@
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <ul class="list-inline text-center">
+
                     <li class="list-inline-item">
-                        <a href="#">
+                        <a href="https://t.me/PrimetkiBot" target="_blank" rel="nofollow">
                 <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  <i class='fab fa-telegram fa-stack-2x'></i>
                 </span>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                </span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#">
+                        <a href="https://github.com/tt0y/superstitions" target="_blank" rel="nofollow">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -79,7 +71,7 @@
                         </a>
                     </li>
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
+                <p class="copyright text-muted">{{URL::to('/')}} {{date('Y')}}</p>
             </div>
         </div>
     </div>
@@ -91,7 +83,7 @@
 
 <!-- Custom scripts for this template -->
 <script src="/blog/js/clean-blog.min.js"></script>
-
+@include('inc.counters')
 </body>
 
 </html>

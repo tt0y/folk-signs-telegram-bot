@@ -8,8 +8,7 @@
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="post-heading">
                         <h1>{{ $superstition->name }}</h1>
-                        <span class="meta">Народные приметы на
-                            {{ $superstition->day . ' ' . \App\helpers::$months[$superstition->month] }}</span>
+                        <span class="meta">Народные приметы на {{ $superstition->day . ' ' . \App\helpers::$months[$superstition->month] }}</span>
                     </div>
                 </div>
             </div>
@@ -26,8 +25,6 @@
                     @else
                         {!! $superstition->description !!}
                     @endif
-                    <p>Приметы доступны в Telegram боте
-                        <a href="https://t.me/PrimetkiBot">PrimetkiBot</a>.
                 </div>
             </div>
         </div>

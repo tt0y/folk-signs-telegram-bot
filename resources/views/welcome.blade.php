@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.79.0">
-    <title>Primetki</title>
+    <title>Primetki - Народные приметы</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
 
@@ -66,8 +66,6 @@
         <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
     </footer>
 </div>
-
-
-
+@include('inc.counters')
 </body>
 </html>
