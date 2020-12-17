@@ -62,5 +62,5 @@
 @include('inc.messages')
 
 </body>
-</html>Добавить категорию
+</html>
 

@@ -12,7 +12,7 @@ class SuperstitionsController extends Controller
     {
         $superstition = new Superstition();
 
-        $superstitions = $superstition->get();
+        $superstitions = $superstition->paginate(env('ADMIN_ITEMS_PER_PAGE'));
 
         return view('admin.superstitions.index', ['superstitions' => $superstitions]);
     }

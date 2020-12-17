@@ -28,7 +28,9 @@
                 </tr>
             @endforeach
         </table>
-
+        <div class="clearfix">
+            {{ $superstitions->links( "pagination::bootstrap-4") }}
+        </div>
     </main>
 @endsection
 @section('js')
