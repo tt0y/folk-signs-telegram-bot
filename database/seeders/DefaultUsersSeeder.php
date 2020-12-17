@@ -18,7 +18,7 @@ class DefaultUsersSeeder extends Seeder
         User::create([
             'name'              => 'admin@primetki.ru',
             'email'             => 'admin@primetki.ru',
-            'password'          => Hash::make('secret'),
+            'password'          => Hash::make(env('DEFAULT_ADMIN_PASS')),
             'email_verified_at' => now(),
         ]);
     }

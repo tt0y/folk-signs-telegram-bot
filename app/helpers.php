@@ -9,6 +9,21 @@ namespace App;
  */
 class helpers
 {
+    public static $months = [
+        1 => 'Января',
+        2 => 'Февраля',
+        3 => 'Марта',
+        4 => 'Апреля',
+        5 => 'Мая',
+        6 => 'Июня',
+        7 => 'Июля',
+        8 => 'Августа',
+        9 => 'Сентября',
+        10 => 'Октября',
+        11 => 'Ноября',
+        12 => 'Декабря',
+    ];
+
     /**
      * @param $daysCount
      * @param string $operation
@@ -26,8 +41,16 @@ class helpers
         ];
     }
 
-    public static function getMessageFormatted(array $data = [], $itemSeparator = '')
+    public static function getMessageFormatted(array $data = [], $itemSeparator = '', $doubleSeparator = false)
     {
-        return $data['name'] . $itemSeparator . $itemSeparator . $data['description'] . $itemSeparator . $itemSeparator . 'Подробнее:' . $itemSeparator .  $data['link'];
+        ($doubleSeparator)
+            ? $itemSeparator = $itemSeparator . $itemSeparator
+            : $itemSeparator = $itemSeparator
+
+        (!empty($data['link']))
+            ? $link = __('Подробнее:') . $itemSeparator . $data['link']
+            : $link = '';
+
+        return $data['name'] . $itemSeparator . $data['description'] . $itemSeparator . $link;
     }
 }

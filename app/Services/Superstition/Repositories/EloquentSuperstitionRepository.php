@@ -26,12 +26,16 @@ class EloquentSuperstitionRepository implements SuperstitionRepositoryInterface
             ['month', '=', $filters['month']],
         ])->get()->toArray();
 
+        (!empty($raw[0]['description']))
+            ? $link = URL::to('/') . '/' . $filters['day'] . '/' . $filters['month'] . '/' . Str::slug($raw[0]['name'])
+            : $link = '';
+
         if (isset($raw[0]))
         {
             $this->superstition = [
                 'name' => $raw[0]['name'],
                 'description' => $raw[0]['description'],
-                'link' => URL::to('/'). '/' . $filters['day'] . '/' . $filters['month'] . '/' . Str::slug($raw[0]['name']),
+                'link' => $link,
             ];
         }
 
