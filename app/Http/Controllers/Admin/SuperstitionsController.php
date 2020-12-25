@@ -30,6 +30,7 @@ class SuperstitionsController extends Controller
             'day' => $request->input('day'),
             'month' => $request->input('month'),
             'description' => $request->input('description'),
+            'full_text' => $request->input('full_text'),
         ]);
 
         if($superstition){
@@ -57,6 +58,7 @@ class SuperstitionsController extends Controller
         $superstition->month = (int)$request->input('month');
         $superstition->name = $request->input('name');
         $superstition->description = $request->input('description');
+        $superstition->full_text = $request->input('full_text');
 
         if($superstition->save()){
             return redirect()->route('superstitions')->with('success', 'Приметка успешно обновлена');

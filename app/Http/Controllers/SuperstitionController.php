@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\helpers;
 use App\Http\Requests\SuperstitionRequest;
 use App\Models\Article;
 use App\Models\Superstition;
@@ -81,6 +82,29 @@ class SuperstitionController extends Controller
         if (!$superstition) return abort(404);
 
         return view('superstition', ['superstition' => $superstition]);
+    }
+
+    /**
+     * Get superstition by link
+     *
+     * @param $day
+     * @param $month
+     * @param $slug
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|void
+     */
+    public function superstitionOnMain()
+    {
+        $superstition = Superstition::where([
+            ['day', '=', date('d')],
+            ['month', '=', date('m')],
+        ])->first();
+
+        $data = $this->superstitionService->searchSuperstitions(helpers::dateExtra());
+        $link = helpers::getTodayLink($data, PHP_EOL);
+
+        if (!$superstition) return null;
+
+        return view('welcome', ['superstition' => $superstition, 'link' => $link]);
     }
 
     /**

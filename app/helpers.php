@@ -53,4 +53,13 @@ class helpers
 
         return $data['name'] . $itemSeparatorX2 . $data['description'] . $itemSeparatorX2 . $link;
     }
+
+    public static function getTodayLink(array $data = [], $itemSeparator = '', $doubleSeparator = true)
+    {
+        (!empty($data['link']))
+            ? $link = $data['link']
+            : $link = '';
+
+        return $link;
+    }
 }

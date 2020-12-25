@@ -15,9 +15,10 @@ use Telegram\Bot\Laravel\Facades\Telegram;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+Route::get('/', 'SuperstitionController@superstitionOnMain');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/{day}/{month}/{slug}', 'SuperstitionController@showSuperstition')->name('superstition.show');
