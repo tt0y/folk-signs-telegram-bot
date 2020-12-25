@@ -51,19 +51,19 @@
     </header>
 
     <main class="px-3">
-        <h1>Телеграм-бот «Приметки» Приметы на день </h1>
-        <p class="lead">---</p>
+        <h1>Телеграм-бот «Приметки»</h1>
+        <p class="lead">-</p>
         <p class="lead">Что можно и чего нельзя делать в этот день</p>
         <p class="lead">Просто спросите бота о примете на сегодня и он будет присылать вам одну народную примету каждый день</p>
         <p class="lead">Если надоело, удалите беседу с ботом</p>
-        <p class="lead">---</p>
+        <p class="lead">-</p>
         <p class="lead">
             <a href="https://t.me/PrimetkiBot" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Перейти к боту</a>
         </p>
     </main>
 
     <footer class="mt-auto text-white-50">
-        <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+        <p>Cover template for <a href="https://getbootstrap.com/" target="_blank" rel="nofollow" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" target="_blank" rel="nofollow"  class="text-white">@mdo</a>.</p>
     </footer>
 </div>
 @include('inc.counters')
