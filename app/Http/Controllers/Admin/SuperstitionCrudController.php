@@ -21,7 +21,7 @@ class SuperstitionCrudController extends CrudController
 
     /**
      * Configure the CrudPanel object. Apply settings to all operations.
-     * 
+     *
      * @return void
      */
     public function setup()
@@ -33,7 +33,7 @@ class SuperstitionCrudController extends CrudController
 
     /**
      * Define what happens when the List operation is loaded.
-     * 
+     *
      * @see  https://backpackforlaravel.com/docs/crud-operation-list-entries
      * @return void
      */
@@ -50,13 +50,13 @@ class SuperstitionCrudController extends CrudController
         /**
          * Columns can be defined using the fluent syntax or array syntax:
          * - CRUD::column('price')->type('number');
-         * - CRUD::addColumn(['name' => 'price', 'type' => 'number']); 
+         * - CRUD::addColumn(['name' => 'price', 'type' => 'number']);
          */
     }
 
     /**
      * Define what happens when the Create operation is loaded.
-     * 
+     *
      * @see https://backpackforlaravel.com/docs/crud-operation-create
      * @return void
      */
@@ -64,22 +64,46 @@ class SuperstitionCrudController extends CrudController
     {
         CRUD::setValidation(SuperstitionRequest::class);
 
+        $this->crud->AddFields([
+            [
+                'name' => 'day',
+                'label' => __('day'),
+                'type' => 'number',
+            ],            [
+                'name' => 'month',
+                'label' => __('month'),
+                'type' => 'number',
+            ],            [
+                'name' => 'name',
+                'label' => __('name'),
+                'type' => 'text',
+            ],            [
+                'name' => 'description',
+                'label' => __('description'),
+                'type' => 'text',
+            ],            [
+                'name' => 'full_text',
+                'label' => __('full_text'),
+                'type' => 'tinymce',
+            ],
+        ]);
+
         CRUD::field('day');
         CRUD::field('month');
         CRUD::field('name');
         CRUD::field('description');
-        CRUD::field('full_text');
+        CRUD::field('full_text')->type('tinymce');
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:
          * - CRUD::field('price')->type('number');
-         * - CRUD::addField(['name' => 'price', 'type' => 'number'])); 
+         * - CRUD::addField(['name' => 'price', 'type' => 'number']));
          */
     }
 
     /**
      * Define what happens when the Update operation is loaded.
-     * 
+     *
      * @see https://backpackforlaravel.com/docs/crud-operation-update
      * @return void
      */
