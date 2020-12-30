@@ -23,7 +23,7 @@ Route::get('/', 'SuperstitionController@superstitionOnMain');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/{day}/{month}/{slug}', 'SuperstitionController@showSuperstition')->name('superstition.show');
 
-route::group(['middleware' => 'auth', 'prefix' => 'admin'], function () {
+/*route::group(['middleware' => 'auth', 'prefix' => 'admin'], function () {
 
     // Categories
     Route::get('/superstitions', 'Admin\SuperstitionsController@index')->name('superstitions');
@@ -35,7 +35,7 @@ route::group(['middleware' => 'auth', 'prefix' => 'admin'], function () {
     Route::post('/superstitions/edit/{id}', 'Admin\SuperstitionsController@editRequestSuperstition')->name('superstitions.edit');
 
     Route::delete('/superstitions/delete/', 'Admin\SuperstitionsController@deleteSuperstition')->name('superstitions.delete');
-});
+});*/
 
 Route::post(Telegram::getAccessToken(), function (){
     app('App\Http\Controllers\Backend\TelegramController')->webhook();
