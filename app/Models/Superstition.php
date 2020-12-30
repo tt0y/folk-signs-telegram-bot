@@ -38,6 +38,7 @@ class Superstition extends Model
         'month',
         'name',
         'description',
+        'full_text',
     ];
 
 

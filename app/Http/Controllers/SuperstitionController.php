@@ -3,13 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\helpers;
+use App\Http\Controllers\Api\APIBaseController;
 use App\Http\Requests\SuperstitionRequest;
 use App\Models\Article;
 use App\Models\Superstition;
 use App\Services\Superstition\SuperstitionService;
 use Illuminate\Http\Request;
 
-class SuperstitionController extends Controller
+class SuperstitionController extends APIBaseController
 {
     /**
      * @var SuperstitionService
@@ -44,24 +45,6 @@ class SuperstitionController extends Controller
     {
         $data = $request->getFormData();
         $this->superstitionService->storeSuperstition($data);
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param Superstition $superstition
-     * @param $day
-     * @param $month
-     * @return \Illuminate\Http\JsonResponse
-     */
-    public function show(SuperstitionService $superstition, $day, $month)
-    {
-        $data = $superstition->searchSuperstitions([
-            'day' => $day,
-            'month' => $month
-        ]);
-
-        return response()->json($data);
     }
 
     /**
