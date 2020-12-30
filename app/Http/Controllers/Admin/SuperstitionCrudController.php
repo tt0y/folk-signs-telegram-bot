@@ -88,12 +88,6 @@ class SuperstitionCrudController extends CrudController
             ],
         ]);
 
-        CRUD::field('day');
-        CRUD::field('month');
-        CRUD::field('name');
-        CRUD::field('description');
-        CRUD::field('full_text')->type('tinymce');
-
         /**
          * Fields can be defined using the fluent syntax or array syntax:
          * - CRUD::field('price')->type('number');
