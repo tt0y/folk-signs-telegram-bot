@@ -15,14 +15,4 @@ use App\Http\Controllers\SuperstitionController;
 |
 */
 
-Route::resource('v1/superstitions', 'SuperstitionController', ['except' => ['create', 'edit']]);
-
-Route::group([
-    'namespace' => 'Api',
-], function () {
-
-    Route::resource('v1/superstitions/{day}/{month}', 'SuperstitionController', ['only' => [
-        'index', 'show'
-    ]]);
-
-});
+Route::resource('v1/superstitions', 'Api\SuperstitionController', ['except' => ['create', 'edit']]);

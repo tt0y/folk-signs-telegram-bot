@@ -29,25 +29,6 @@ class SuperstitionController extends APIBaseController
     }
 
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
-     */
-    public function index()
-    {
-        return Superstition::paginate();
-    }
-
-    /**
-     * @param Request $request
-     */
-    public function store(Request $request)
-    {
-        $data = $request->getFormData();
-        $this->superstitionService->storeSuperstition($data);
-    }
-
-    /**
      * Get superstition by link
      *
      * @param $day
@@ -77,45 +58,14 @@ class SuperstitionController extends APIBaseController
      */
     public function superstitionOnMain()
     {
-        $superstition = Superstition::where([
-            ['day', '=', date('d')],
-            ['month', '=', date('m')],
-        ])->first();
 
         $data = $this->superstitionService->searchSuperstitions(helpers::dateExtra());
         $link = helpers::getTodayLink($data, PHP_EOL);
 
-        if (!$superstition) return null;
+        if (!$data) return null;
 
-        return view('welcome', ['superstition' => $superstition, 'link' => $link]);
+        return view('welcome', ['superstition' => $data, 'link' => $link]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param SuperstitionRequest $request
-     * @param Superstition $superstition
-     * @return \Illuminate\Http\JsonResponse
-     */
-    public function update(SuperstitionRequest $request, Superstition $superstition)
-    {
-        $data = $this->superstitionService->updateSuperstition($superstition, $request->all());
 
-        return response()->json($data);
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param Superstition $superstition
-     * @return \Illuminate\Http\Response
-     * @throws \Exception
-     */
-    public function destroy(Superstition $superstition)
-    {
-        $superstition = Superstition::findOrFail($superstition->id);
-
-        if($superstition->delete())
-            return response(null, 204);
-    }
 }
