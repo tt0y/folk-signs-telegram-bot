@@ -80,7 +80,7 @@ class SuperstitionCrudController extends CrudController
             ],            [
                 'name' => 'description',
                 'label' => __('description'),
-                'type' => 'text',
+                'type' => 'textarea',
             ],            [
                 'name' => 'full_text',
                 'label' => __('full_text'),
