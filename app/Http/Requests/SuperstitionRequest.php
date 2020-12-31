@@ -13,7 +13,8 @@ class SuperstitionRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        // only allow updates if the user is logged in
+        return backpack_auth()->check();
     }
 
     /**
