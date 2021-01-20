@@ -33,11 +33,15 @@ class TelegramMailingController extends Controller
 
         foreach ($chats  as $chat)
         {
-            Telegram::sendMessage([
-                'chat_id' => $chat['chat_id'],
-                'parse_mode' => 'HTML',
-                'text' => $text
-            ]);
+            try {
+                Telegram::sendMessage([
+                    'chat_id' => $chat['chat_id'],
+                    'parse_mode' => 'HTML',
+                    'text' => $text
+                ]);
+            }catch (\Exception $exception){
+                echo $exception->getMessage() . $chat['chat_id'] . '<br>';
+            }
         }
     }
 }
