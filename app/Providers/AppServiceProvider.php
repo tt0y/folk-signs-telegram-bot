@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Services\RandomFact\Repositories\EloquentRandomFactRepository;
+use App\Services\RandomFact\Repositories\RandomFactRepositoryInterface;
 use App\Services\Superstition\Repositories\EloquentSuperstitionRepository;
 use App\Services\Superstition\Repositories\SuperstitionRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
@@ -35,6 +37,11 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(
             SuperstitionRepositoryInterface::class,
             EloquentSuperstitionRepository::class
+        );
+
+        $this->app->bind(
+            RandomFactRepositoryInterface::class,
+            EloquentRandomFactRepository::class
         );
 
     }

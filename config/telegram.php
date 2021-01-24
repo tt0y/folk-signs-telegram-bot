@@ -127,6 +127,8 @@ return [
         \App\Telegram\autumnSuperstitionCommand::class,
         \App\Telegram\winterSuperstitionCommand::class,
 
+        \App\Telegram\randomFactCommand::class,
+
         \App\Telegram\StartCommand::class,
     ],
 

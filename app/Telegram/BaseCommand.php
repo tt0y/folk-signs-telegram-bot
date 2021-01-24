@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace App\Telegram;
 
 use App\helpers;
+use App\Services\RandomFact\RandomFactService;
 use App\Services\Superstition\SuperstitionService;
 use Telegram\Bot\Actions;
 use Telegram\Bot\Commands\Command;
@@ -32,16 +33,20 @@ class BaseCommand extends Command
      * @var SuperstitionService
      */
     protected SuperstitionService $superstitionService;
+    protected RandomFactService $randomFactService;
 
     /**
      * SuperstitionController constructor.
      * @param SuperstitionService $superstitionService
+     * @param RandomFactService $randomFactService
      */
     public function __construct(
-        SuperstitionService $superstitionService
+        SuperstitionService $superstitionService,
+        RandomFactService $randomFactService
     )
     {
         $this->superstitionService = $superstitionService;
+        $this->randomFactService = $randomFactService;
     }
 
     /**
