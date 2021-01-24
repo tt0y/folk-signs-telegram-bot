@@ -68,7 +68,7 @@ class RandomFactCrudController extends CrudController
             ], [
                 'name' => 'description',
                 'label' => __('description'),
-                'type' => 'tinymce',
+                'type' => 'textarea',
             ],
         ]);
 
