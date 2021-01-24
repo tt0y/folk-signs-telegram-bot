@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend;
 
 use App\helpers;
 use App\Http\Controllers\Controller;
+use App\Models\Superstition;
 use App\Models\TelegramUser;
 use App\Services\Superstition\SuperstitionService;
 use Illuminate\Http\Request;
@@ -41,6 +42,9 @@ class TelegramMailingController extends Controller
                 ]);
             }catch (\Exception $exception){
                 echo $exception->getMessage() . $chat['chat_id'] . '<br>';
+
+                $unsubscribe = new TelegramUser();
+                $unsubscribe->where('chat_id', $chat['chat_id'])->delete();
             }
         }
     }
