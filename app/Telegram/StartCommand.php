@@ -41,7 +41,8 @@ class StartCommand extends BaseCommand
         $text = "Привет $userName! " . PHP_EOL . PHP_EOL
             . "Приметы на сегодня --> /today" . PHP_EOL
             . "Приметы на завтра  --> /tomorrow" . PHP_EOL
-            . "Вчерашние приметы  --> /yesterday";
+            . "Вчерашние приметы  --> /yesterday" . PHP_EOL
+            . "Случайный факт  --> /random";
 
         $keyboard = [
             //['/today'],

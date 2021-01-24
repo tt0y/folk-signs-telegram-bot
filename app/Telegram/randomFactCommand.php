@@ -15,7 +15,7 @@ class randomFactCommand extends BaseCommand
     /**
      * @var string Command Name
      */
-    protected $name = 'randomFact';
+    protected $name = 'random';
 
     /**
      * @var array Command Aliases
