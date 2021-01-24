@@ -9,6 +9,6 @@ class SitemapController extends Controller
 {
     public function index()
     {
-        SitemapGenerator::create('https://primetki.ru')->writeToFile('sitemap.xml');
+        SitemapGenerator::create(config('app.url'))->writeToFile(public_path('sitemap.xml'));
     }
 }
