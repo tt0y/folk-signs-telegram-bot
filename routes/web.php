@@ -20,6 +20,7 @@ use Telegram\Bot\Laravel\Facades\Telegram;
 Route::get('/', 'SuperstitionController@superstitionOnMain');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/sitemap-superstitions-list', [App\Http\Controllers\SuperstitionsList::class, 'index'])->name('sitemap-superstitions-list');
 Route::get('/sitemap-generate', [App\Http\Controllers\SitemapController::class, 'index'])->name('sitemap-generate');
 
 Route::get('/{day}/{month}/{slug}', 'SuperstitionController@showSuperstition')->name('superstition.show');

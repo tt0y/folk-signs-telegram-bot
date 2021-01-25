@@ -9,6 +9,7 @@ class SitemapController extends Controller
 {
     public function index()
     {
-        SitemapGenerator::create(config('app.url'))->writeToFile(public_path('sitemap.xml'));
+        SitemapGenerator::create(config('app.url').'/sitemap-superstitions-list/')
+            ->writeToFile(public_path('sitemap.xml'));
     }
 }
