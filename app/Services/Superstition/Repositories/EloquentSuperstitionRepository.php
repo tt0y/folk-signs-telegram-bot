@@ -11,7 +11,7 @@ class EloquentSuperstitionRepository implements SuperstitionRepositoryInterface
 {
     private array $superstition = [
         'name' => 'Примет на сегодня нет',
-        'description' => 'Долгие наблюдения за природой не дали резултатов :('
+        'description' => 'Долгие наблюдения за природой не дали результатов :('
     ];
 
     public function find(int $id)
