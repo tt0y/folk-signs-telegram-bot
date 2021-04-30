@@ -3,8 +3,6 @@
 namespace App\Telegram;
 
 use App\helpers;
-use App\Services\Superstition\SuperstitionService;
-use Telegram\Bot\Actions;
 use Telegram\Bot\Commands\Command;
 
 /**
@@ -33,7 +31,7 @@ class winterSuperstitionCommand extends BaseCommand
     public function handle()
     {
         $data = $this->superstitionService->searchSuperstitions([
-            'day'   => 0,
+            'day' => 0,
             'month' => 12,
         ]);
 

@@ -3,13 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\Superstition;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Str;
 
 class SuperstitionsList extends Controller
 {
-    protected $arMonths = array(
+    protected $arMonths = [
         1 => 'Января',
         2 => 'Февраля',
         3 => 'Марта',
@@ -21,7 +20,7 @@ class SuperstitionsList extends Controller
         9 => 'Сентября',
         10 => 'Октября',
         11 => 'Ноября',
-        12 => 'Декабря');
+        12 => 'Декабря'];
 
     public function index()
     {

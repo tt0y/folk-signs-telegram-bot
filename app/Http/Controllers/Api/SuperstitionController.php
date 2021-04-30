@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\helpers;
-use App\Http\Controllers\Api\APIBaseController;
 use App\Http\Requests\SuperstitionRequest;
 use App\Http\Resources\SuperstitionResource;
 use App\Models\Superstition;
@@ -23,8 +21,7 @@ class SuperstitionController extends APIBaseController
      */
     public function __construct(
         SuperstitionService $superstitionService
-    )
-    {
+    ) {
         $this->superstitionService = $superstitionService;
     }
 
@@ -91,7 +88,8 @@ class SuperstitionController extends APIBaseController
     {
         $superstition = Superstition::findOrFail($superstition->id);
 
-        if($superstition->delete())
+        if ($superstition->delete()) {
             return response(null, 204);
+        }
     }
 }

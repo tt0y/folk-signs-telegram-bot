@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Services\Superstition\Handlers;
@@ -24,8 +25,7 @@ class CreateSuperstitionHandler
      */
     public function __construct(
         SuperstitionRepositoryInterface $superstitionRepository
-    )
-    {
+    ) {
         $this->superstitionRepository = $superstitionRepository;
     }
 

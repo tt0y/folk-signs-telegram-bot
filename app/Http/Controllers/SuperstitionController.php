@@ -20,8 +20,7 @@ class SuperstitionController extends APIBaseController
      */
     public function __construct(
         SuperstitionService $superstitionService
-    )
-    {
+    ) {
         $this->superstitionService = $superstitionService;
     }
 
@@ -38,7 +37,7 @@ class SuperstitionController extends APIBaseController
             ['month', '=', $month],
         ])->first();
 
-        if (!$superstition){
+        if (!$superstition) {
             return;
         }
 
@@ -58,10 +57,10 @@ class SuperstitionController extends APIBaseController
         $data = $this->superstitionService->searchSuperstitions(helpers::dateExtra());
         $link = helpers::getTodayLink($data, PHP_EOL);
 
-        if (!$data) return null;
+        if (!$data) {
+            return null;
+        }
 
         return view('welcome', ['superstition' => $data, 'link' => $link]);
     }
-
-
 }

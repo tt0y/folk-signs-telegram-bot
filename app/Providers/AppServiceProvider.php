@@ -43,6 +43,5 @@ class AppServiceProvider extends ServiceProvider
             RandomFactRepositoryInterface::class,
             EloquentRandomFactRepository::class
         );
-
     }
 }

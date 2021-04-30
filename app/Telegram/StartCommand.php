@@ -2,10 +2,6 @@
 
 namespace App\Telegram;
 
-use App\Models\Superstition;
-use App\Models\TelegramUser;
-use Illuminate\Support\Facades\Log;
-use Telegram\Bot\Actions;
 use Telegram\Bot\Commands\Command;
 use Telegram\Bot\Keyboard\Keyboard;
 use Telegram\Bot\Laravel\Facades\Telegram;
