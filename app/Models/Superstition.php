@@ -40,6 +40,4 @@ class Superstition extends Model
         'description',
         'full_text',
     ];
-
-
 }

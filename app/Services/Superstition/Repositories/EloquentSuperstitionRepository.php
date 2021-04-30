@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Services\Superstition\Repositories;
@@ -26,8 +27,7 @@ class EloquentSuperstitionRepository implements SuperstitionRepositoryInterface
             ['month', '=', $filters['month']],
         ])->get()->toArray();
 
-        if (isset($raw[0]))
-        {
+        if (isset($raw[0])) {
             (!empty($raw[0]['description']))
                 ? $link = URL::to('/') . '/' . $filters['day'] . '/' . $filters['month'] . '/' . Str::slug($raw[0]['name'])
                 : $link = '';

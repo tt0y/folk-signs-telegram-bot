@@ -1,15 +1,13 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Services\RandomFact\Repositories;
 
 use App\Models\RandomFact;
-use Illuminate\Support\Facades\URL;
-use Illuminate\Support\Str;
 
 class EloquentRandomFactRepository implements RandomFactRepositoryInterface
 {
-
     public function find(int $id)
     {
         return RandomFact::find($id);

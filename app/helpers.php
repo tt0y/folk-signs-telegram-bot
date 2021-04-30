@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App;
@@ -32,11 +33,11 @@ class helpers
      */
     public static function dateExtra($daysCount = 0, $operation = '+', $timeUnit = ' days')
     {
-        $day   = date_create(date("Y-m-d"))->modify($operation.$daysCount.$timeUnit)->format("d");
-        $month = date_create(date("Y-m-d"))->modify($operation.$daysCount.$timeUnit)->format("m");
+        $day = date_create(date("Y-m-d"))->modify($operation . $daysCount . $timeUnit)->format("d");
+        $month = date_create(date("Y-m-d"))->modify($operation . $daysCount . $timeUnit)->format("m");
 
         return [
-            'day'   => $day,
+            'day' => $day,
             'month' => $month,
         ];
     }

@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Services\Superstition;
@@ -6,7 +7,6 @@ namespace App\Services\Superstition;
 use App\Models\Superstition;
 use App\Services\Superstition\Handlers\CreateSuperstitionHandler;
 use App\Services\Superstition\Repositories\SuperstitionRepositoryInterface;
-use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 /**
  * Class SuperstitionService
@@ -31,8 +31,7 @@ class SuperstitionService
     public function __construct(
         CreateSuperstitionHandler $createSuperstitionHandler,
         SuperstitionRepositoryInterface $superstitionRepository
-    )
-    {
+    ) {
         $this->createSuperstitionHandler = $createSuperstitionHandler;
         $this->superstitionRepository = $superstitionRepository;
     }

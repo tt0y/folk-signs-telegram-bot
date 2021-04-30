@@ -1,10 +1,11 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Http\Controllers\Api;
 
-use Illuminate\Http\JsonResponse;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Http\Response;
 
@@ -23,7 +24,7 @@ class APIBaseController extends Controller
         $response = [
             'success' => true,
             'message' => $message,
-            'errors'  => null,
+            'errors' => null,
         ];
 
         # pagination fix
@@ -48,9 +49,9 @@ class APIBaseController extends Controller
     {
         $response = [
             'success' => false,
-            'data'    => null,
+            'data' => null,
             'message' => $message,
-            'errors'  => $errors,
+            'errors' => $errors,
         ];
 
         return new JsonResponse($response, $httpStatusCode);
@@ -67,9 +68,9 @@ class APIBaseController extends Controller
     public function sendOAuthError($message, $errorType = '', $httpStatusCode = JsonResponse::HTTP_BAD_REQUEST): JsonResponse
     {
         $response = [
-            'error'             => $errorType,
+            'error' => $errorType,
             'error_description' => $message,
-            'message'           => $message,
+            'message' => $message,
         ];
 
         return new JsonResponse($response, $httpStatusCode);

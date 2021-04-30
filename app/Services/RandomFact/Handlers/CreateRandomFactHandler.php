@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Services\RandomFact\Handlers;
@@ -24,8 +25,7 @@ class CreateRandomFactHandler
      */
     public function __construct(
         RandomFactRepositoryInterface $randomFactRepository
-    )
-    {
+    ) {
         $this->randomFactRepository = $randomFactRepository;
     }
 

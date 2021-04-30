@@ -18,8 +18,7 @@ class TelegramMailingController extends Controller
      */
     public function __construct(
         SuperstitionService $superstitionService
-    )
-    {
+    ) {
         $this->superstitionService = $superstitionService;
     }
 
@@ -31,15 +30,14 @@ class TelegramMailingController extends Controller
 
         $text = helpers::getMessageFormatted($data, PHP_EOL);
 
-        foreach ($chats  as $chat)
-        {
+        foreach ($chats  as $chat) {
             try {
                 Telegram::sendMessage([
                     'chat_id' => $chat['chat_id'],
                     'parse_mode' => 'HTML',
                     'text' => $text
                 ]);
-            }catch (\Exception $exception){
+            } catch (\Exception $exception) {
                 echo $exception->getMessage() . $chat['chat_id'] . '<br>';
 
                 $unsubscribe = new TelegramUser();

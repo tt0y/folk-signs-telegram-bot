@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Services\RandomFact;
@@ -6,7 +7,6 @@ namespace App\Services\RandomFact;
 use App\Models\RandomFact;
 use App\Services\RandomFact\Handlers\CreateRandomFactHandler;
 use App\Services\RandomFact\Repositories\RandomFactRepositoryInterface;
-use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 /**
  * Class RandomFactService
@@ -31,8 +31,7 @@ class RandomFactService
     public function __construct(
         CreateRandomFactHandler $createRandomFactHandler,
         RandomFactRepositoryInterface $randomFactRepository
-    )
-    {
+    ) {
         $this->createRandomFactHandler = $createRandomFactHandler;
         $this->randomFactRepository = $randomFactRepository;
     }
