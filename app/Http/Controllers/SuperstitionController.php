@@ -4,11 +4,8 @@ namespace App\Http\Controllers;
 
 use App\helpers;
 use App\Http\Controllers\Api\APIBaseController;
-use App\Http\Requests\SuperstitionRequest;
-use App\Models\Article;
 use App\Models\Superstition;
 use App\Services\Superstition\SuperstitionService;
-use Illuminate\Http\Request;
 
 class SuperstitionController extends APIBaseController
 {
@@ -29,8 +26,6 @@ class SuperstitionController extends APIBaseController
     }
 
     /**
-     * Get superstition by link
-     *
      * @param $day
      * @param $month
      * @param $slug
@@ -43,7 +38,9 @@ class SuperstitionController extends APIBaseController
             ['month', '=', $month],
         ])->first();
 
-        if (!$superstition) return abort(404);
+        if (!$superstition){
+            return;
+        }
 
         return view('superstition', ['superstition' => $superstition]);
     }
@@ -58,7 +55,6 @@ class SuperstitionController extends APIBaseController
      */
     public function superstitionOnMain()
     {
-
         $data = $this->superstitionService->searchSuperstitions(helpers::dateExtra());
         $link = helpers::getTodayLink($data, PHP_EOL);
 

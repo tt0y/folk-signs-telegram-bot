@@ -4,15 +4,14 @@ namespace App\Http\Controllers\Backend;
 
 use App\helpers;
 use App\Http\Controllers\Controller;
-use App\Models\Superstition;
 use App\Models\TelegramUser;
 use App\Services\Superstition\SuperstitionService;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Telegram\Bot\Laravel\Facades\Telegram;
 
 class TelegramMailingController extends Controller
 {
+    private SuperstitionService $superstitionService;
+
     /**
      * SuperstitionController constructor.
      * @param SuperstitionService $superstitionService
@@ -24,11 +23,11 @@ class TelegramMailingController extends Controller
         $this->superstitionService = $superstitionService;
     }
 
-    public function startMailing(SuperstitionService $superstitionService)
+    public function startMailing()
     {
         $chats = TelegramUser::select('chat_id')->groupBy('chat_id')->get();
 
-        $data = $superstitionService->searchSuperstitions(helpers::dateExtra());
+        $data = $this->superstitionService->searchSuperstitions(helpers::dateExtra());
 
         $text = helpers::getMessageFormatted($data, PHP_EOL);
 
