@@ -37,7 +37,7 @@ services:
     container_name: dadminer
     labels:
       - traefik.backend=adminer
-      - traefik.frontend.rule=Host:db-admin.thesigns.ru
+      - traefik.frontend.rule=Host:db-admin.primetki.ru
       - traefik.docker.network=web
       - traefik.port=8080
     networks:
@@ -52,7 +52,7 @@ services:
       - '/var/www/html:/var/www/html'
     labels:
      - traefik.backend=nginx
-     - traefik.frontend.rule=Host:thesigns.ru
+     - traefik.frontend.rule=Host:primetki.ru
      - traefik.docker.network=web
      - traefik.port=80
     networks:

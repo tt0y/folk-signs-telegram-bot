@@ -26,6 +26,6 @@ defaultEntryPoints = ["http", "https"]
     entryPoint = "http"
 
 [docker]
-  domain = "thesigns.ru"
+  domain = "primetki.ru"
   watch = true
   network = "br-docker"

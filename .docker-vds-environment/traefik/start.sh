@@ -14,7 +14,7 @@ docker run -d \
   -v $PWD/acme.json:/acme.json \
   -p 80:80 \
   -p 443:443 \
-  -l traefik.frontend.rule=Host:monitor.thesigns.ru \
+  -l traefik.frontend.rule=Host:monitor.primetki.ru \
   -l traefik.port=8080 \
   --network web \
   --name traefik \
