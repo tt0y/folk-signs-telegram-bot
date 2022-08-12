@@ -23,7 +23,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/sitemap-superstitions-list', [App\Http\Controllers\SuperstitionsList::class, 'index'])->name('sitemap-superstitions-list');
 Route::get('/sitemap-generate', [App\Http\Controllers\SitemapController::class, 'index'])->name('sitemap-generate');
 
-Route::get('/{day}/{month}/{slug}', 'SuperstitionController@showSuperstition')->name('superstition.show');
+Route::get('/{day}/{month}', 'SuperstitionController@showSuperstition')->name('superstition.show');
 
 Route::post(Telegram::getAccessToken(), function (){
     app('App\Http\Controllers\Backend\TelegramController')->webhook();
