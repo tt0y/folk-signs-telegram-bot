@@ -2,6 +2,7 @@
 
 namespace App\Telegram;
 
+use Illuminate\Support\Facades\Log;
 use Telegram\Bot\Commands\Command;
 use Telegram\Bot\Keyboard\Keyboard;
 use Telegram\Bot\Laravel\Facades\Telegram;
@@ -33,6 +34,7 @@ class StartCommand extends BaseCommand
     {
         $telegramChatId = Telegram::getWebhookUpdates()['message']['chat']['id'];
         $userName = Telegram::getWebhookUpdates()['message']['from']['username'] ?? $userName = '[UserName]';
+        Log::info(sprintf("Hello from %s (%s)", $userName, $telegramChatId));
 
         $text = "Привет $userName! " . PHP_EOL . PHP_EOL
             . "Приметы на сегодня --> /today" . PHP_EOL
