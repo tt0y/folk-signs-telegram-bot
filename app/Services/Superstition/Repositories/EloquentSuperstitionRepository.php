@@ -29,7 +29,7 @@ class EloquentSuperstitionRepository implements SuperstitionRepositoryInterface
 
         if (isset($raw[0])) {
             (!empty($raw[0]['description']))
-                ? $link = URL::to('/') . '/' . $filters['day'] . '/' . $filters['month'] . '/' . Str::slug($raw[0]['name'])
+                ? $link = URL::to('/') . '/' . $filters['day'] . '/' . $filters['month']
                 : $link = '';
 
             $this->superstition = [
