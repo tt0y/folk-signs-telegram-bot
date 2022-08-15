@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Telegram\Bot\Laravel\Facades\Telegram;
 
@@ -23,7 +24,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/sitemap-superstitions-list', [App\Http\Controllers\SuperstitionsList::class, 'index'])->name('sitemap-superstitions-list');
 Route::get('/sitemap-generate', [App\Http\Controllers\SitemapController::class, 'index'])->name('sitemap-generate');
 
-Route::get('/{day}/{month}', 'SuperstitionController@showSuperstition')->name('superstition.show');
+Route::get('/{month}/{day}', 'SuperstitionController@showSuperstition')->name('superstition.show');
 
 Route::post(Telegram::getAccessToken(), function (){
     app('App\Http\Controllers\Backend\TelegramController')->webhook();
