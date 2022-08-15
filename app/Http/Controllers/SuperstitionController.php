@@ -25,16 +25,16 @@ class SuperstitionController extends APIBaseController
     }
 
     /**
-     * @param $day
      * @param $month
+     * @param $day
      * @param $slug
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|void
      */
-    public function showSuperstition($day, $month, $slug='')
+    public function showSuperstition($month, $day)
     {
         $superstition = Superstition::where([
-            ['day', '=', $day],
             ['month', '=', $month],
+            ['day', '=', $day],
         ])->first();
 
         if (!$superstition) {
