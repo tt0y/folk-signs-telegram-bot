@@ -6,7 +6,7 @@ An application that tells what superstition is associated with a specified day
 
 Telegram bot name:
 
-https://t.me/primetki_bot
+https://t.me/PrimetkiBot
 
 
 
