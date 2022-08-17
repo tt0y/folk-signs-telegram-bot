@@ -20,6 +20,8 @@ Available commands
 
 / yesterday - yesterday's superstition
 
+/ random - random historical fact connected with popular beliefs
+
 
 ---
 
